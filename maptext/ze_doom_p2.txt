@@ -258,4 +258,28 @@
 	{
 		"chi"		"** **"
 	}
+	"A player has aquired the megasphere powerup!"
+	{
+		"chi"		"** **"
+	}
+	"Megasphere powerup has one charge!"
+	{
+		"chi"		"** **"
+	}
+	"Megasphere only usable 30 seconds after pikcup!"
+	{
+		"chi"		"** **"
+	}
+	"Megasphere now usable!"
+	{
+		"chi"		"** **"
+	}
+	"Megasphere used!"
+	{
+		"chi"		"** **"
+	}
+	"Megasphere power depleted!"
+	{
+		"chi"		"** **"
+	}
 }

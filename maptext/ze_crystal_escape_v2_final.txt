@@ -104,4 +104,16 @@
 	{
 		"syncvalue"		"4694"
 	}
+	"**The hegrenade will do a lot of damage to the boss in 3 seconds**"
+	{
+		"chi"		"** **"
+	}
+	"**stage1 win**"
+	{
+		"chi"		"** **"
+	}
+	"**The winner will raise the level**"
+	{
+		"chi"		"** **"
+	}
 }

@@ -380,4 +380,240 @@ Island was killed recently**"
 	{
 		"syncvalue"		"85060"
 	}
+	"**Map by Malgo**"
+	{
+		"chi"		"** **"
+	}
+	"**Were leaving in 15 seconds!**"
+	{
+		"chi"		"** **"
+	}
+	"**Go go go**"
+	{
+		"chi"		"** **"
+	}
+	"**Cave will open 15 seconds**"
+	{
+		"chi"		"** **"
+	}
+	"**Well dig passage in 10 seconds**"
+	{
+		"chi"		"** **"
+	}
+	"**The way is covered, well dig up the passage in 15 seconds**"
+	{
+		"chi"		"** **"
+	}
+	"**Give us time, well dig them up**"
+	{
+		"chi"		"** **"
+	}
+	"**Bear room will open in 20 seconds**"
+	{
+		"chi"		"** **"
+	}
+	"**The door will close in 30 seconds**"
+	{
+		"chi"		"** **"
+	}
+	"**Stage 1 - failed*"
+	{
+		"chi"		"** **"
+	}
+	"**Stage 1 - completed**"
+	{
+		"chi"		"** **"
+	}
+	"**The trolls blocking the way, we must kill him!**"
+	{
+		"chi"		"** **"
+	}
+	"**The way is covered, well dig up the passage in 20 seconds**"
+	{
+		"chi"		"** **"
+	}
+	"**Were almost there**"
+	{
+		"chi"		"** **"
+	}
+	"**Door will open in 10 seconds**"
+	{
+		"chi"		"** **"
+	}
+	"**This is the last point, defend here for 35 seconds**"
+	{
+		"chi"		"** **"
+	}
+	"**Stage 2 - completed**"
+	{
+		"chi"		"** **"
+	}
+	"**Kill remaining zombies**"
+	{
+		"chi"		"** **"
+	}
+	"[ Stage 3 - Katana room ]"
+	{
+		"chi"		"** **"
+	}
+	"**In order to get the strongest weapons on the new island**"
+	{
+		"chi"		"** **"
+	}
+	"**You have to take on this difficult task**"
+	{
+		"chi"		"** **"
+	}
+	"**Teleport will enable in 10 seconds**"
+	{
+		"chi"		"** **"
+	}
+	"**Well dig passage in 15 seconds**"
+	{
+		"chi"		"** **"
+	}
+	"**Door is locked, we need key**"
+	{
+		"chi"		"** **"
+	}
+	"**Stage 2 - failed**"
+	{
+		"chi"		"** **"
+	}
+	"**You have found a key**"
+	{
+		"chi"		"** **"
+	}
+	"**The door is locked, we have to open it**"
+	{
+		"chi"		"** **"
+	}
+	"**Katana room will open in 10 seconds**"
+	{
+		"chi"		"** **"
+	}
+	"**Door will close in 10 seconds**"
+	{
+		"chi"		"** **"
+	}
+	"**This is Ghoul, how did he get out of his prison?**"
+	{
+		"chi"		"** **"
+	}
+	"**Ghoul is using Creature Illusion**"
+	{
+		"chi"		"** **"
+	}
+	"**Ghoul is using Sudden Death**"
+	{
+		"chi"		"** **"
+	}
+	"**Ghoul is using Front Sweep**"
+	{
+		"chi"		"** **"
+	}
+	"**Ghoul dead!"
+	{
+		"chi"		"** **"
+	}
+	"**Survive 6 seconds**"
+	{
+		"chi"		"** **"
+	}
+	"**Stage 3 - completed**"
+	{
+		"chi"		"** **"
+	}
+	"[ Stage 4 - Dragon Corpse ]"
+	{
+		"chi"		"** **"
+	}
+	"**The last legendary dragon who wanted to live his last days in the under of Rookgaard Island was killed recently**"
+	{
+		"chi"		"** **"
+	}
+	"**But they found him. The dragons body still rests there. . .**"
+	{
+		"chi"		"** **"
+	}
+	"**Way will open in 5 seconds**"
+	{
+		"chi"		"** **"
+	}
+	"**Defend yourselves for 20 seconds**"
+	{
+		"chi"		"** **"
+	}
+	"**Find the dragons body, it still rests there!**"
+	{
+		"chi"		"** **"
+	}
+	"**Somethings wrong here, we have to defend ourselves here**"
+	{
+		"chi"		"** **"
+	}
+	"** Katana Sword has been picked up! **"
+	{
+		"chi"		"** **"
+	}
+	"**Theres nothing more to discover here**"
+	{
+		"chi"		"** **"
+	}
+	"**Way will open in 8 seconds**"
+	{
+		"chi"		"** **"
+	}
+	"**Dont shoot!**"
+	{
+		"chi"		"** **"
+	}
+	"**Wait 10 seconds more**"
+	{
+		"chi"		"** **"
+	}
+	"**Dragon back, be careful is about to attack**"
+	{
+		"chi"		"** **"
+	}
+	"**Stage 4 - failed*"
+	{
+		"chi"		"** **"
+	}
+	"**180 seconds remaining"
+	{
+		"chi"		"** **"
+	}
+	"**100 seconds remaining"
+	{
+		"chi"		"** **"
+	}
+	"**50 seconds remaining"
+	{
+		"chi"		"** **"
+	}
+	"**20 seconds remaining"
+	{
+		"chi"		"** **"
+	}
+	"**10 seconds remaining"
+	{
+		"chi"		"** **"
+	}
+	"**5 seconds remaining"
+	{
+		"chi"		"** **"
+	}
+	"[ Stage 6 - The End ]"
+	{
+		"chi"		"** **"
+	}
+	"**[Monk] Youre ready to leave the island**"
+	{
+		"chi"		"** **"
+	}
+	"**Find The Oracle**"
+	{
+		"chi"		"** **"
+	}
 }

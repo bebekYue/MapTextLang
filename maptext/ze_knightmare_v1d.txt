@@ -39,6 +39,7 @@
 	"<Hmm Nothing Just Wait>"
 	{
 		"chi"		"**别死刷了！快走啊 **"
+		"DoorCountDown"		"10"
 	}
 	"<Tp in 20 Second>"
 	{
@@ -76,25 +77,25 @@
 	{
 		"chi"		"**在这3分钟内活下来 **"
 	}
-	"< Prepare To Die >"
+	"< PREPARE TO DIE >"
 	{
 		"chi"		"**或者给我狗带 **"
 	}
 	"-=?????=-"
 	{
-		"chi"		"**死墙 **"
+		"chi"		"**死墙**"
 	}
 	"-=Laser=-"
 	{
-		"chi"		"**随机跳刀 **"
+		"chi"		"**躲激光（随机一个方向）**"
 	}
 	"-=Holy=-"
 	{
-		"chi"		"**内场天坠 **"
+		"chi"		"**内圈伤害（往外退）**"
 	}
 	"-=Back Holy=-"
 	{
-		"chi"		"**外场天坠 **"
+		"chi"		"**外圈伤害（往内侧移动）**"
 	}
 	"<Yellow Crystal Has Been Defeated For Now >"
 	{
@@ -102,6 +103,26 @@
 	}
 	"<Death>"
 	{
-		"chi"		"**死亡转圈圈 **"
+		"chi"		">>>死亡转圈圈~<<<"
+	}
+	"<TP Will Be Enable in 55 sec>"
+	{
+		"chi"		"** **"
+	}
+	"<Now Playing BOFU2017 ouroVoros  Negentropy (a.k.a. Team Grimoire) >"
+	{
+		"chi"		"** **"
+	}
+	"<defend 10 sec>"
+	{
+		"chi"		"** **"
+	}
+	"< Fallen Peoples you are free >"
+	{
+		"chi"		"** **"
+	}
+	"<defend 30 more sec >"
+	{
+		"chi"		"** **"
 	}
 }

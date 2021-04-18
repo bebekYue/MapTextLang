@@ -8,7 +8,7 @@
 	}
 	"67533"
 	{
-		"enable"		"0"
+		"enable"		"1"
 		"hammerid"		"67533"
 		"m_iname"		"crasher target"
 	}
@@ -20,7 +20,7 @@
 	}
 	"561301"
 	{
-		"enable"		"0"
+		"enable"		"1"
 		"hammerid"		"561301"
 		"m_iname"		"ex1_girl_cloud2_breakble"
 	}
@@ -456,7 +456,7 @@
 	}
 	"37507"
 	{
-		"enable"		"0"
+		"enable"		"1"
 		"hammerid"		"37507"
 		"m_iname"		"cute target"
 	}
@@ -759,5 +759,11 @@
 		"enable"		"0"
 		"hammerid"		"653827"
 		"m_iname"		"kbc_zombie_summoningkey_target3"
+	}
+	"785931"
+	{
+		"enable"		"0"
+		"hammerid"		"785931"
+		"m_iname"		"final_crasher_after_phys_break"
 	}
 }
