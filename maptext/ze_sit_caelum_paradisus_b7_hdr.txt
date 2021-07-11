@@ -2,7 +2,7 @@
 {
 	"** TAKE FRONT-LEFT DOOR **"
 	{
-		"chi"		"**走左边第二扇门----30**"
+		"chi"		"**走左边第二扇门----20**"
 	}
 	"** ENTER THE CENTER OF HALL TO ACCESS SP ITEM ROOM **"
 	{
@@ -106,7 +106,7 @@
 	}
 	"** TAKE FRONT-RIGHT DOOR **"
 	{
-		"chi"		"**走右边第二扇门----40**"
+		"chi"		"**走右边第二扇门----30**"
 	}
 	">>>DOOR OPENING IN 20 SECS<<<"
 	{
@@ -175,7 +175,7 @@
 	}
 	"** TAKE LEFT DOOR **"
 	{
-		"chi"		"**走左边第一扇门----50**"
+		"chi"		"**走左边第一扇门----40**"
 	}
 	">> DOOR OPENING IN 30 SECS <<"
 	{
