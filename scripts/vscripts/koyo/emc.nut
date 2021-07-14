@@ -3,6 +3,11 @@ cd <- 0
 cd2 <- 5
 cd3 <- 55
 cd4 <- 10
+kg <- Entities.FindByName(null, "boss_phys_spider")
+
+
+
+
 
 
 function falldmg()
@@ -18,7 +23,17 @@ function falldmg()
 }
 
 
-
+function dmgft()
+{
+	pl <- null;
+	while(null != (pl = Entities.FindByClassname(pl, "player")))
+{
+	if(pl.GetTeam() == 3)
+	{
+			EntFireByHandle(pl, "setdamagefilter", "fallfilter", 0.0, null, null);
+	}
+}
+}
 
 
 function bmcd()
@@ -33,7 +48,13 @@ function bmcd()
 	{
 	 gt.__KeyValueFromString("message","           大招准备完毕√");	
 	}
-	
+}
+
+function killglock()
+{
+	local g = null;
+	g = Entities.FindByClassnameWithin(g,"weapon_glock", kg.GetOrigin(),300);
+	EntFireByHandle(g,"kill","",0.00,null,null);
 }
 
 function countdown()
@@ -79,6 +100,12 @@ function wb()
 	EntFireByHandle(self, "runscriptcode", "wb()", 1, null, null);
   }
 }
+
+function show()
+{
+	ScriptPrintMessageChatAll("--");
+}
+
 
 
 
