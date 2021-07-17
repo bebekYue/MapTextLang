@@ -4,7 +4,7 @@ cd2 <- 5
 cd3 <- 55
 cd4 <- 10
 kg <- Entities.FindByName(null, "boss_phys_spider")
-
+times <- 10
 
 
 
@@ -53,8 +53,13 @@ function bmcd()
 function killglock()
 {
 	local g = null;
-	g = Entities.FindByClassnameWithin(g,"weapon_glock", kg.GetOrigin(),300);
+	g = Entities.FindByClassnameWithin(g,"weapon_glock", kg.GetOrigin(),500);
+	if(times!=0)
+	{
+	times--;
 	EntFireByHandle(g,"kill","",0.00,null,null);
+	EntFireByHandle(self, "runscriptcode", "killglock()", 0.2, null, null);
+  }
 }
 
 function countdown()
@@ -103,7 +108,7 @@ function wb()
 
 function show()
 {
-	ScriptPrintMessageChatAll("--");
+	printl("--");
 }
 
 
