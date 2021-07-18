@@ -12,12 +12,17 @@
 //	}
 //}
 //注意事项：
-//0、如果trigger_hurt有多个同名实体，且parent对象并非template生成或勾了don't do namefix，会导致hurt移动异常(目前脚本禁用该情况，并提示)
+//0、如果trigger_hurt有多个同名实体，且parent对象并非template生成或勾了don't do namefix，会导致hurt移动异常(脚本禁用该情况，并提示)
 //1、如果hurt实体本身有脚本会覆盖本身的脚本，请手动找出并改成replace
 //2、高速移动的hurt该方式会导致hurt会慢一些到达，预计差距为 速度/32（由于速度快到的也会更快，大致理解成晚0.03秒左右到达），door的延迟似乎会更大
-//3、每个hurt会对应多两个实体
-if(self.GetClassname().slice(0,8)!="trigger_")return;
+//3、每个hurt会对应多两个实体，弹幕多的图可能会实体溢出
+//4、其他需要修正重复触发的情况也可以绑定该脚本（即不想使用parent移动的情况）
 if(self.GetMoveParent()==null)return;
+
+if(!("bugdmgfixprint" in getroottable())){
+	::bugdmgfixprint<-true;
+	ScriptPrintMessageChatAll(" \x04叠伤脚本已加载，如有问题请联系健忘症晚期。————2021-07-18");
+}
 
 function checkInRepeat(name){
 	if(Entities.FindByName(null, "load_script")==null){
@@ -27,8 +32,8 @@ function checkInRepeat(name){
 	ent <- Entities.FindByName(null, "load_script");
 	printl(ent);
 	if(!ent.ValidateScriptScope()){
-		ScriptPrintMessageChatAll("脚本数据异常，停用叠伤修复");
-		return;
+		ScriptPrintMessageChatAll("脚本数据异常，不进行异常提示");
+		return true;
 	}
 	if(!("NAME_REPEAT_LIST" in ent.GetScriptScope())){
 		ent.GetScriptScope().NAME_REPEAT_LIST<-[];
