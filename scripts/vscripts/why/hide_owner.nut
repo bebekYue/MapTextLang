@@ -82,6 +82,9 @@ function Tick(){
 				EntFireByHandle(self, "runscriptcode", "SetNewOwner()", 0, weapon.GetOwner(), weapon);
 			}
 		}
+		if(BUTTON_LIST.len()>0&&btn_msg_print){
+			InitBlockUseFix();
+		}
 	}
 }
 
@@ -184,10 +187,41 @@ function ClearPlayerHide(){
 	ScriptPrintMessageChatAll(" \x03重置半透明完成\x01");
 }
 
-function Init(){
+function HideInit(){
 	IncludeScript("why/color_cfg.nut", this);
 	IncludeScript("why/map_cfg.nut", this);
-	ScriptPrintMessageChatAll(" \x03已加载神器隐身 20210612\x01");
+	ScriptPrintMessageChatAll(" \x03已加载神器隐身 20210719\x01");
 }
 
-self.ConnectOutput("OnSpawn", "Init");
+self.ConnectOutput("OnSpawn", "HideInit");
+
+// 第二部分，卡模型优化，启用方式参见why/use_protect_v2.nut
+BUTTON_LIST<-[];
+btn_msg_print<-true;
+function PlayerUseItem(){
+	local index=-1;
+	for(local i=0;i<OLD_OWNER.len();i++){
+		if(OLD_OWNER[i]==activator){
+			index=i;break;
+		}
+	}
+	if(index<0)return;
+	if(BUTTON_LIST[index].GetRootMoveParent()==activator){
+		EntFireByHandle(BUTTON_LIST[index], "press", "", 0.0, activator, null);
+	}
+}
+function InitBlockUseFix(){
+	local pl=null;
+	while ((pl = Entities.FindByClassname(pl, "player")) != null)
+	{
+		if(pl.ValidateScriptScope()){
+			if("InputUse" in pl.GetScriptScope())continue;
+			pl.InputUse <- function(){
+				EntFire("load_script", "runscriptcode", "PlayerUseItem()", 0.0, activator);
+				return true;
+			}
+		}
+	}
+	ScriptPrintMessageChatAll(" \x04附加功能已加载：神器按钮卡模型优化，附带升级版按E保护。 \x02实验性质功能，不完全保证能完全处理卡模型问题。");
+	btn_msg_print=false;
+}
