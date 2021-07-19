@@ -195,7 +195,7 @@ function HideInit(){
 
 self.ConnectOutput("OnSpawn", "HideInit");
 
-// 第二部分，卡模型优化，启用方式参见why/use_protect_v2.nut
+// 第二部分，卡模型优化
 BUTTON_LIST<-[];
 btn_msg_print<-true;
 function PlayerUseItem(){
@@ -216,7 +216,7 @@ function InitBlockUseFix(){
 	{
 		if(pl.ValidateScriptScope()){
 			if("InputUse" in pl.GetScriptScope())continue;
-			pl.InputUse <- function(){
+			pl.GetScriptScope().InputUse <- function(){
 				EntFire("load_script", "runscriptcode", "PlayerUseItem()", 0.0, activator);
 				return true;
 			}
