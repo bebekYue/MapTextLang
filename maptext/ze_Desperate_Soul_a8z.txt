@@ -158,7 +158,7 @@
 	}
 	"**The owl statues eyes take on an eerie glow. As the light fades, the statuette has disappeared**"
 	{
-		"chi"			"**猫头鹰石像的眼睛发出了怪异的光芒。随着光芒的消失，小雕像也不见了(运送小雕像失败，重新回去拾取运送)-----5**"
+		"chi"			"**猫头鹰石像的眼睛发出了怪异的光芒。随着光芒的消失，小雕像也不见了(运送小雕像失败，重新回去拾取运送)**"
 	}
 	"**The magic around is flowing to the door**"
 	{
@@ -222,7 +222,7 @@
 	}
 	"**We successfully deliver the statuette to the base**"
 	{
-		"chi"			"**我们成功地将小猫头鹰雕像放到基座上**"
+		"chi"			"**我们成功地将小猫头鹰雕像放到基座上----20**"
 	}
 	"**The statue! We found it!**"
 	{
@@ -514,7 +514,7 @@
 	}
 	"**Survive and resist the zombies**"
 	{
-		"chi"			"**找个地方守住僵尸直至僵尸传送---20**"
+		"chi"			"**找个地方守住僵尸直至僵尸传送---30**"
 	}
 	"**We can immediately go home**"
 	{
