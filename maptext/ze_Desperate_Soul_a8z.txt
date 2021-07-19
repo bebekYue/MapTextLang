@@ -124,15 +124,15 @@
 	{
 		"chi"			"**前面有台阶，爬上去试试**"
 	}
-	"**<Tips>Stare at the stone for at least 1 seconds, try to squat down.**"
+	"<Tips>Stare at the stone for at least 1 seconds, try to squat down."
 	{
-		"chi"			"**<提示>只要一个人去上面然后蹲下来看着石头1秒就行**"
+		"chi"			"**<提示>只要一个人去上面然后蹲下来看着石头一秒就行**"
 	}
 	"**Pressed the old switch, it seems that something is going to happen**"
 	{
 		"chi"			"**按下那个古老的开关，似乎会有什么事情发生**"
 	}
-	"**A player get <Brightness>**"
+	"**A player get <Brightness>"
 	{
 		"chi"			"**一位人类拾取了神器-光(范围被动缓慢回血)**"
 	}
@@ -324,7 +324,7 @@
 	{
 		"chi"			"**它消失了，祭坛传送也已激活**"
 	}
-	"**Nah. Its end for now. Why are the fragments of Diablo appeared here? Nevermind, We'd better leave here now.**"
+	"**Nah. Its end for now. Why are the fragments of Diablo appeared here? Nevermind, Wed better leave here now.**"
 	{
 		"chi"			"**呼，暂时结束了。为什么暗黑破坏神的分身会出现在这里？不管了，现在我们得先离开这里。**"
 	}
@@ -456,7 +456,7 @@
 	{
 		"chi"			"**一位人类拾取了神器-灵光**"
 	}
-	"**[Secret Quest] You found the energy crystal , item <Wisp> has unlocked!**"
+	"[Secret Quest] You found the energy crystal , item <Wisp> has unlocked!"
 	{
 		"chi"			"**[隐藏任务]你发现了能量水晶，下一关解锁神器-灵光**"
 	}
