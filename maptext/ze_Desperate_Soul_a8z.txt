@@ -514,7 +514,7 @@
 	}
 	"**Survive and resist the zombies**"
 	{
-		"chi"			"**找个地方守住僵尸直至结束**"
+		"chi"			"**找个地方守住僵尸直至僵尸传送---20**"
 	}
 	"**We can immediately go home**"
 	{
