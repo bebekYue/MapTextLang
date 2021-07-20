@@ -12,7 +12,7 @@ function SetHP(amount)
 
 function DiabloHPa()
 {
-	EntFire("S1_Diablo_Hp_Text", "SetText", "灵魂 : "+self.GetHealth().tostring(), 0.00, null);
+	EntFire("S1_Diablo_Hp_Text", "SetText", "幻象 : "+self.GetHealth().tostring(), 0.00, null);
 	EntFire("S1_Diablo_Hp_Text", "Display", "", 0.05, null);
 	EntFireByHandle(self, "RunScriptCode", " DiabloHPa(); ", 0.10, null, null);
 }
