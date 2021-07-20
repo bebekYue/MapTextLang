@@ -384,15 +384,15 @@
 	{
 		"chi"			"**前往祭坛激活传送**"
 	}
-	"**>>Cauterize<<**"
+	">>Cauterize<<"
 	{
-		"chi"			"**>>灼烧<<---5**"
+		"chi"			"**>>龙车喷射<<(远离龙飞行的方向)---5**"
 	}
-	"**>>Mortal Chorus<<**"
+	">>Mortal Chorus<<"
 	{
 		"chi"			"**>>死亡咏唱<<---5**"
 	}
-	"**Nithhogg is casting <The advent of despair: Gotterdammerung>**"
+	"**Nithhogg is casting <The advent of despair: Gotterdammerung>"
 	{
 		"chi"			"**尼德霍格正在释放<冒险的绝望:Gotterdammerung>(终极技能)**"
 	}
@@ -400,33 +400,33 @@
 	{
 		"chi"			"**尼德霍格释放了神明黄昏，快跑进黄色的光圈里---5**"
 	}
-	"**>>Horrid Roar<<**"
+	">>Horrid Roar<<"
 	{
-		"chi"			"**>>恐怖咆哮<<---5**"
+		"chi"			"**>>恐怖咆哮(远离紫色圆圈)<<---5**"
 	}
-	"**>>Akh Morn<<**"
+	">>Akh Morn<<"
 	{
-		"chi"			"**>>死亡循环<<---5**"
+		"chi"			"**>>死亡循环(被红圈选中的玩家远离人群)<<---5**"
 	}
 	"**>>Sable Pearl<<**"
 	{
-		"chi"			"** **"
+		"chi"			"**>>火焰珍珠<<(躲避四周球状火焰,它过会分裂开并向四周射出火焰)---5**"
 	}
-	"**>>Scarlet Whisper<<**"
+	">>Scarlet Whisper<<"
 	{
-		"chi"			"** **"
+		"chi"			"**>>猩红密语<<(躲避两片垂直的火焰区域)---5**"
 	}
-	"**>>Dragon Breath<<**"
+	">>Dragon Breath<<"
 	{
-		"chi"			"**>>龙之吐息<<---5**"
+		"chi"			"**>>龙之吐息<<(躲避龙正前方发出的火焰)---5**"
 	}
-	"**>>Fiery Wings<<**"
+	">>Fiery Wings<<"
 	{
-		"chi"			"** **"
+		"chi"			"**>>火焰之翼<<(躲避四周和中间区域的火焰)---5**"
 	}
-	"**>>Anger Roar<<**"
+	">>Anger Roar<<"
 	{
-		"chi"			"**>>愤怒咆哮<<---5**"
+		"chi"			"**>>愤怒咆哮<<(全屏伤害)---5**"
 	}
 	"**There seems to be no road here , keep defending!!!**"
 	{
@@ -514,7 +514,7 @@
 	}
 	"**Survive and resist the zombies**"
 	{
-		"chi"			"**找个地方守住僵尸直至僵尸传送---30**"
+		"chi"			"**找个地方守住僵尸直至僵尸传送---32**"
 	}
 	"**We can immediately go home**"
 	{
