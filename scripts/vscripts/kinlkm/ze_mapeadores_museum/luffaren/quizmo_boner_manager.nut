@@ -15,7 +15,7 @@
 //	Finished in 1 day (2021-06-30)
 //	~2mb in total (.bsp + assets combined)
 //=========================================================================================================================================\\
-quiz_amount <- 6;					//amount quizzes to ask before triggering the finale
+quiz_amount <- 4;					//amount quizzes to ask before triggering the finale
 intermission_time <- 14.00;			//seconds to wait between quizzes (music playing + players killing caged people, etc) MIN:4.00, MAX:14.00
 quiz_time <- 10.00;					//seconds you have to answer by stepping on the right platform
 finale_bridge_delay <- 0.00;		//how many seconds to delay the finale-bridges rising up (making the defense shorter) MIN:0.00, MAX:25.00
@@ -456,251 +456,185 @@ QUIZ_LIST <- [
 				"乐器",
 				"饮料",
 
-				"What do koala's mostly eat?",
-				"Eucalyptus",
-				"Insects",
-				"Tree bark",
-				"Emu droppings",
+				"考拉主要吃什么?",
+				"桉树",
+				"昆虫",
+				"树皮",
+				"鸸鹋屎",
 
-				"What happened to John F. Kennedy?",
-				"He got shot in the head",
-				"He died in a NASA space flight",
-				"He went to jail for life",
-				"Nothing",
+				"约翰·肯尼迪怎么了?",
+				"他头部中弹",
+				"他死于美国宇航局的一次太空飞行",
+				"他终生入狱",
+				"没什么",
 
-				"We're all...",
-				"Human",
-				"Old",
-				"Horny",
-				"Without any faults",
+				"细胞的动力是?",
+				"线粒体",
+				"细胞核",
+				"液泡",
+				"细胞质",
 
-				"The powerhouse of the cell is?",
-				"Mitochondria",
-				"Nucleus",
-				"Vacuole",
-				"Cytoplasm",
+				"超人的弱点是什么?",
+				"氪铁矿",
+				"女人",
+				"酒",
+				"不公平",
 
-				"What is superman weak against?",
-				"Kryptonite",
-				"Women",
-				"Alcohol",
-				"Injustice",
+				"吉隆坡在哪里?",
+				"马来西亚",
+				"印度",
+				"泰国",
+				"越南",
 
-				"Where is Kuala Lumpur?",
-				"Malaysia",
-				"India",
-				"Thailand",
-				"Vietnam",
+				"乌拉圭属于哪个洲?",
+				"南美洲",
+				"非洲",
+				"亚洲",
+				"大洋洲",
 
-				"Which continent does Uruguay belong to?",
-				"South America",
-				"Africa",
-				"Asia",
-				"Oceania",
-
-				"What country is between Finland and Norway?",
-				"Sweden",
-				"Denmark",
-				"Lithuania",
-				"The Netherlands",
+				"芬兰和挪威之间是哪个国家?",
+				"瑞典",
+				"丹麦",
+				"立陶宛",
+				"荷兰",
 				
-				"In which country is The Hague located?",
-				"The Netherlands",
-				"United Kingdom",
-				"United States",
-				"Denmark",
+				"海牙位于哪个国家?",
+				"荷兰",
+				"英国",
+				"美国",
+				"丹麦",
 
-				"Where are the Faroe Islands?",
-				"North of England",
-				"Southwest of Italy",
-				"South of Turkey",
-				"In the Philippines",
+				"法罗群岛在哪里?",
+				"英格兰北部",
+				"意大利西南部",
+				"土耳其南部",
+				"菲律宾",
 
-				"Where is Lissabon?",
-				"Portugal",
-				"Lebanon",
-				"Marocko",
-				"Greece",
+				"里斯本在哪里?",
+				"葡萄牙",
+				"黎巴嫩",
+				"马洛科",
+				"希腊",
 
-				"Which country is *not* in Africa?",
-				"Yemen",
-				"Zambia",
-				"Niger",
-				"Angola",
+				"哪个国家*不在*非洲?",
+				"也门",
+				"赞比亚",
+				"尼日尔",
+				"安哥拉",
 
-				"What is Arkansas?",
-				"A state in the U.S",
-				"A city Mexico",
-				"A province in Canada",
-				"A country in South America",
+				"什么是阿肯色州?",
+				"美国的一个州",
+				"墨西哥的一个城市",
+				"加拿大的一个省",
+				"南美洲的一个国家"，
 
-				"What are the first 3 digits of pi?",
-				"3.14",
-				"3.41",
-				"4.13",
-				"4.31",
+				"是什么引起了潮汐?",
+				"太阳和月亮",
+				"月亮",
+				"地震",
+				"风",
 
-				"What causes tidal waves?",
-				"The sun and the moon",
-				"The moon",
-				"Earthquakes",
-				"The wind",
+				"在真空中什么东西会先降落\nA 钢球还是羽毛?",
+				"他们将同时降落",
+				"钢球",
+				"羽毛",
+				"他们不会因为在真空中而坠落",
 
-				"What will land first in a vacuum\nA steel ball or a feather?",
-				"They will land at the same time",
-				"The steel ball",
-				"The feather",
-				"They will not fall due to being in a vacuum",
-
-				"What is a young cow called?",
-				"Calf",
-				"Clove",
-				"Cough",
-				"Cow",
-
-				"What year did world war 2 end?",
+				"第二次世界大战是哪一年结束的?",
 				"1945",
 				"1946",
 				"1947",
 				"1944",
 
-				"What animal is Tom Nook?\n(from Animal Crossing)",
-				"Tanuki",
-				"Giraffe",
-				"Elephant",
-				"Bear",
+				"汤姆努克是什么动物?\n(在动物之森里)",
+				"狸猫",
+				"长颈鹿",
+				"大象",
+				"熊",
 
-				"Which country shares borders with Spain?",
-				"Portugal",
-				"Germany",
-				"Morocco",
-				"Italy",
+				"哪个国家最常与披萨联系在一起?",
+				"意大利",
+				"法国",
+				"西班牙",
+				"葡萄牙",
 
-				"Which country is mostly associated with pizza?",
-				"Italy",
-				"France",
-				"Spain",
-				"Portugal",
+				"人体最重的器官是什么?",
+				"皮肤",
+				"肝",
+				"脑",
+				"肺",
 
-				"What's the heaviest organ in the human body?",
-				"Skin",
-				"Liver",
-				"Brain",
-				"Lungs",
+				"眼睛的有色部分称为?",
+				"虹膜",
+				"视网膜",
+				"角膜",
+				"瞳孔",
 
-				"What's the colored part of the human eye called?",
-				"Iris",
-				"Cornea",
-				"Pupil",
-				"Retina",
+				"蜘蛛恐惧症是害怕什么生物?",
+				"蜘蛛",
+				"蛇",
+				"蠕虫",
+				"老鼠",
 
-				"Arachnaphobia is the fear of what organism?",
-				"Spiders",
-				"Snakes",
-				"Worms",
-				"Mice",
+				"什么是 '绝对零度'?",
+				"热力学的最低温度",
+				"一个连亲吻女孩都不会的书呆子",
+				"当车辆完全停止时",
+				"ATM 余额数量",
 
-				"What is 'absolute zero'?",
-				"The lowest limit of the thermodynamic temperature scale",
-				"A nerd who can't even kiss a girl",
-				"When a vehicle has come to a complete stop",
-				"The median ATM-balance for poor people",
+				"最快的速度是多少?",
+				"光速",
+				"音速",
+				"地球的速度",
+				"你的速度",
 
-				"What is 0C* to F*?\n(temperature-degrees)",
-				"32",
-				"0",
-				"-10",
-				"20",
-
-				"What is the fastest possible speed?",
-				"The speed of light",
-				"The speed of sound",
-				"The speed of the earth",
-				"The speed of NASA's parker solar probe",
-
-				"What's the CS:GO running speed with a knife?",
+				"CS:GO 切刀移动速度是多少?",
                 "250 units/s",
                 "200 units/s",
                 "150 units/s",
                 "100 units/s",
 
-				"What year did Super Mario Bros come out?\n(for the NES)",
+				"超级马里奥兄弟是哪一年出的?",
                 "1985",
                 "1983",
                 "1986",
                 "1982",
 
-				"Which word is spelled correctly?",
-				"Indispensable",
-				"Entrepeneur",
-				"Vaccuum",
-				"Consciencious",
+				"水的另一个名字是什么?",
+				"氧化氢",
+				"二氧化二氢",
+				"氢",
+				"氧",
 
-				"Which word is spelled correctly?",
-				"Wednesday",
-				"Wendesday",
-				"Wendnesday",
-				"Wenesday",
+				"冰处于什么状态?",
+				"固体",
+				"液体",
+				"气体",
+				"等离子体",
 
-				"What's another name for water?",
-				"Dihydrogen Monoxide",
-				"Dihydrogen Dioxide",
-				"Hydrogen",
-				"Oxygen",
-
-				"What state of matter is ice in?",
-				"Solid",
-				"Liquid",
-				"Gas",
-				"Plasma",
-
-				"2pm is what in a 24 hour format?",
-				"14:00",
-				"2:00",
-				"12:00",
-				"20:00",
-
-				"On which map can 'Popdog' be found?",
+				"在哪张地图上可以找到 '爆米花'?",
 				"Train",
 				"Nuke",
 				"Vertigo",
 				"Overpass",
 
-				"Are we rushin' in...",
-				"Or are we going sneaky beaky like?",
-				"Or are we going A?",
-				"Or are we walking there?",
-				"Or are we going home?",
+				"珠穆朗玛峰位于哪里?",
+				"喜马拉雅山",
+				"阿尔卑斯山",
+				"安第斯山脉",
+				"落基山脉",
 
-				"Bingo bango bongo...",
-				"Bish bash bosh",
-				"Bash bish bosh",
-				"I've got bingo",
-				"Bongo bango bingo",
+				"刹车时什么会使汽车减速?",
+				"摩擦",
+				"空气阻力",
+				"引擎",
+				"重力",
 
-				"Where is Mt. Everest located?",
-				"In the Himalayas",
-				"In the Alps",
-				"In the Andes",
-				"In the Rocky Mountains",
-
-				"What slows down a car when braking?",
-				"Friction",
-				"Air Resistance",
-				"The engine",
-				"Gravity",
-
-				"Zazu is a character in...",
-				"The Lion King",
-				"Pocahontas",
-				"The Jungle Book",
-				"Bambi",
-
-				"Violin is part of which orchestra family?",
-				"String",
-				"Woodwind",
-				"Brass",
-				"Percussion",
+				"Zazu 是哪里的角色...",
+				"狮子王",
+				"风中奇缘",
+				"丛林之书",
+				"斑比",
 
 				"一字节等于多少位?",
 				"8",
@@ -720,17 +654,11 @@ QUIZ_LIST <- [
 				"回家",
 				"吃一盘美味的意大利面",
 
-				"What does 'LA' in LASER stand for?",
-				"Light Amplification",
-				"Light Addition",
-				"Light Attraction",
-				"Light Assassination",
-
 				"哪些是第1代入门宝可梦?",
 				"妙蛙种子, 小火龙 和 杰尼龟",
 				"菊草叶, 火球鼠 和 小锯鳄",
 				"木守宫, 火稚鸡 和 水跃鱼",
-				"草苗龟, 小火焰猴 and 波加曼",
+				"草苗龟, 小火焰猴 和 波加曼",
 
 				"韩国的首都是什么?",
 				"首尔",
@@ -779,10 +707,10 @@ function Start()
 	EntFireByHandle(self,"RunScriptCode"," Start3(); ",intermission_time+0.50,null,null);
 	EntFireByHandle(self,"RunScriptCode"," Tick(); ",0.10,null,null);
 	EntFire("Console","Command","sv_disable_radar 1",0.00,null);
-	EntFire("Console","Command","say ***WELCOME TO BONER QUIZ***",0.00,null);
-	EntFire("Console","Command","say ***WELCOME TO BONER QUIZ***",0.01,null);
-	EntFire("Console","Command","say ***WELCOME TO BONER QUIZ***",0.02,null);
-	EntFire("Console","Command","say ***SET YOUR SCREEN RESOLUTION TO/BELOW 1080p***",0.03,null);
+	EntFire("Console","Command","say ***欢迎来到 BONER QUIZ***",0.00,null);
+	EntFire("Console","Command","say ***欢迎来到 BONER QUIZ***",0.01,null);
+	EntFire("Console","Command","say ***欢迎来到 BONER QUIZ***",0.02,null);
+	EntFire("Console","Command","say ***将屏幕分辨率设置为/低于1080p***",0.03,null);
 	EntFireByHandle(self,"RunScriptCode"," RunIntermission(); ",1.00,null,null);
 	EntFire("lqq_finalebridge_text","DisableDraw","",0.05,null);
 	EntFire("Console","Command","sm_rcon sm_store_credit_amount_kill 0",0.00,null);
@@ -910,9 +838,9 @@ function RunIntermission()
 		EntFire("lqq_finalebridge_z","Open","",35.70,null);
 		EntFire("lqq_finalebridge_h","Open","",38.90,null);
 		EntFire("lqq_finalebridge_text","DisableDraw","",38.90,null);
-		EntFire("Console","Command","say ***ALL QUIZZES HAVE BEEN ANSWERED***",0.00,null);
-		EntFire("Console","Command","say ***THE SURVIVORS MUST NOW DEFEND***",1.00,null);
-		EntFire("Console","Command","say ***GOOD LUCK***",2.00,null);
+		EntFire("Console","Command","say ***所有的考题都答对了***",0.00,null);
+		EntFire("Console","Command","say ***幸存者现在必须防守阵地***",1.00,null);
+		EntFire("Console","Command","say ***祝你好运***",2.00,null);
 		EntFire("Console","Command","say ***LEAVING IN 40 SECONDS***",3.90,null);
 		EntFire("Console","Command","say ***LEAVING IN 30 SECONDS***",13.90,null);
 		EntFire("Console","Command","say ***LEAVING IN 20 SECONDS***",23.90,null);
@@ -950,11 +878,11 @@ function RunIntermission()
 	EntFire("lqq_music_intermission","Pitch","100",0.04,null);
 	EntFire("lqq_music_intermission","Volume","10",0.05,null);
 	EntFire("lqq_music_intermission","Pitch","100",0.05,null);
-	EntFire("Console","Command","say ***GENERATING NEW QUIZ...***",0.00,null);
-	EntFire("Console","Command","say ***QUIZ BEGINS IN 3 SECONDS***",intermission_time-3.00,null);
-	EntFire("Console","Command","say ***QUIZ BEGINS IN 2 SECONDS***",intermission_time-2.00,null);
-	EntFire("Console","Command","say ***QUIZ BEGINS IN 1 SECOND***",intermission_time-1.00,null);
-	EntFire("Console","Command","say ***YOU HAVE "+quiz_time.tostring()+" SECONDS TO ANSWER***",intermission_time,null);
+	EntFire("Console","Command","say ***正在生成新考题...***",0.00,null);
+	EntFire("Console","Command","say ***考试将在3秒后开始***",intermission_time-3.00,null);
+	EntFire("Console","Command","say ***考试将在2秒后开始***",intermission_time-2.00,null);
+	EntFire("Console","Command","say ***考试将在1秒后开始***",intermission_time-1.00,null);
+	EntFire("Console","Command","say ***你有 "+quiz_time.tostring()+" 秒来回答该测验***",intermission_time,null);
 	EntFire("lqq_cage_z_trigger","Enable","",0.00+intermission_time-1.50,null);
 	EntFire("lqq_cage_z_trigger","Disable","",0.00+intermission_time+(0.00+quiz_time-0.50),null);
 	EntFireByHandle(self,"RunScriptCode"," GenerateQuestions(); ",intermission_time,null,null);
@@ -986,9 +914,9 @@ function ValidateQuizScope(handle,start=false)
 	{
 		sc.lqq_answer <- "";
 		sc.lqq_correct <- "X";
-		sc.lqq_text <- "--------------------------------\nWelcome to Quizmo Boner\n--------------------------------\n"+
-		"You must answer "+quiz_amount.tostring()+" individual quizzes.\n"+
-		"If you fail to answer, you die.\nGood luck!";
+		sc.lqq_text <- "--------------------------------\n欢迎来到 Quizmo Boner\n--------------------------------\n"+
+		"你必须回答 "+quiz_amount.tostring()+" 个个人考试.\n"+
+		"如果你不回答，你就会死.\n祝你好运!";
 	}
 	return true;
 }
