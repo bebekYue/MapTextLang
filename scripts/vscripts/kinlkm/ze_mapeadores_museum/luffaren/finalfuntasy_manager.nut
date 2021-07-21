@@ -274,8 +274,8 @@ function ReachedReactor()
 function ReachedBoss()
 {
 	EntFireByHandle(self,"RunScriptCode"," StartBoss(); ",::luff_ff_boss_start_delay,null,null);
-	EntFire("Console","Command","say ***YOU HAVE REACHED THE REACTOR CORE***",0.00,null);
-	EntFire("Console","Command","say ***PLANTING BOMB...***",1.00,null);
+	EntFire("Console","Command","say ***你已经到达反应堆核心***",0.00,null);
+	EntFire("Console","Command","say ***已放置炸弹...***",1.00,null);
 }
 function StartBoss()
 {
@@ -284,8 +284,8 @@ function StartBoss()
 	EntFire("lff_boss_touch_trig","Enable","",4.00,null);
 	EntFire("lff_late_tp","Enable","",5.00,null);
 	EntFire("lff_late_tp2","Enable","",5.00,null);
-	EntFire("Console","Command","say ***SOMETHING IS COMING***",0.00,null);
-	EntFire("Console","Command","say ***GET READY***",1.00,null);
+	EntFire("Console","Command","say ***有什么东西来了***",0.00,null);
+	EntFire("Console","Command","say ***做好准备***",1.00,null);
 	EntFire("lff_music_2","FadeOut","5",0.00,null);
 	EntFire("lff_music_3","PlaySound","",4.00,null);
 	local delay = 4.00;
@@ -460,13 +460,13 @@ function KilledBoss()
 	EntFire("i_lff_bosslaser*","Kill","",0.50,null);
 	EntFire("lff_boss_touch_trig","Disable","",0.00,null);
 	EntFire("lff_late_tp2","Disable","",0.00,null);
-	EntFire("Console","Command","say ***THE SCORPION GUARD HAS BEEN DEFEATED***",0.00,null);
-	EntFire("Console","Command","say ***THIS PLACE IS ABOUT TO BLOW***",1.00,null);
-	EntFire("Console","Command","say ***GET OUT OF HERE FAST***",2.00,null);
+	EntFire("Console","Command","say ***蝎子守卫已被击败***",0.00,null);
+	EntFire("Console","Command","say ***这个地方即将爆炸***",1.00,null);
+	EntFire("Console","Command","say ***赶快离开这里***",2.00,null);
 	if(bossreward)
-		EntFire("Console","Command","say ***(PLAYERS WHO DIDN'T DIE/WEREN'T LATE GOT A HEALTH REWARD)***",3.00,null);
+		EntFire("Console","Command","say ***(没有死亡/和传送的玩家 获得了血量奖励)***",3.00,null);
 	else
-		EntFire("Console","Command","say ***(BOSS DIED SINCE YOU TOOK TOO LONG - NO HEALTH REWARD)***",3.00,null);
+		EntFire("Console","Command","say ***(老板死了 你花了太长时间 - 没有血量奖励)***",3.00,null);
 	EntFireByHandle(self,"RunScriptCode"," idleanim = 0; ",2.00,null,null);
 	EntFire("lff_bossexit_platform","Close","",0.00,null);
 	EntFire("lff_sound_bossdeath","PlaySound","",0.00,null);
