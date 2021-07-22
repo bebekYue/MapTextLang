@@ -135,7 +135,6 @@ function PressedTrapperItem()
 	if(sc.uses<=0)
 	{
 		EntFireByHandle(caller,"Kill","",0.10,null,null);
-		EntFireByHandle(caller, "SetHealth", "-69", 0.10, null, null);
 		EntFireByHandle(sc.model,"Kill","",0.10,null,null);
 		EndTrapper(activator);
 	}
@@ -333,6 +332,9 @@ function EndTrapper(h)
 		EntFireByHandle(h,"SetHealth","-1",0.30,null,null);
 		EntFireByHandle(h,"SetHealth","-1",0.40,null,null);
 		EntFireByHandle(h,"SetHealth","-1",2.00,null,null);
+		EntFireByHandle(h,"SetHealth","-1",3.50,null,null);
+		EntFireByHandle(h,"SetHealth","-1",4.50,null,null);
+		EntFireByHandle(h,"SetHealth","-1",5.00,null,null);
 		EntFireByHandle(h,"AddOutput","movetype 2",2.00,null,null);
 		EntFireByHandle(h,"SetDamageFilter","",2.00,null,null);
 		EntFireByHandle(h,"RemoveContext","luff_trapper_zombie",2.00,null,null);
