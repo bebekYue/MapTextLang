@@ -16,7 +16,7 @@
 //=========================================================================================================================================\\
 ::luff_ff_tickrate <- 0.05;						//how fast to tick player-angles + predicted_viewmodel hide + kill weapons
 ::luff_ff_character_tickrate <- 0.10;			//how fast to tick visual character-animations/states
-::luff_ff_health <- 100.00;						//starting health for players
+::luff_ff_health <- 125.00;						//starting health for players
 ::luff_ff_tpforgive_losing_humans <- false;		//set to 'true' to TP all loser-humans to the vote-room safely (else they get TP:d to zombie-room)
 ::luff_ff_boss_start_delay <- 17.00;			//how long to wait until starting the boss once a player reaches the core (to let others catch up)
 ::luff_ff_jump_damage <- 24.00;					//how much damage a player-jump deals to an enemy
@@ -109,7 +109,6 @@ function RoundStartInitStuff()
 }
 function Start()
 {
-	EntFire("Console","Command","sm_rcon zr_speed_enabled 0",0.00,null);
 	EntFire("Console","Command","sm_rcon sv_enablebunnyhopping 1",0.00,null);
 	EntFire("Console","Command","sm_rcon sm_jump_slowdown_enable 0",0.00,null);
 	EntFireByHandle(self,"RunScriptCode"," Tick(); ",0.05,null,null);	
@@ -207,7 +206,6 @@ function TickFallDownTrig()
 function End()
 {
 	ticking = false;
-	EntFire("Console","Command","sm_rcon zr_speed_enabled 1",0.00,null);
 	EntFire("Console","Command","sm_rcon sv_enablebunnyhopping 0",0.00,null);
 	EntFire("Console","Command","sm_rcon sm_jump_slowdown_enable 1",0.00,null);
 
