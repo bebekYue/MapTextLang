@@ -60,7 +60,7 @@ QUIZ_LIST <- [
 				"22",
 				"24",
 
-				"The quick brown fox jumps over...",
+				"The quick brown fox jumps over... (提示:这句话包含了所有26个英文字母)",
 				"the lazy dog",
 				"the playful cat",
 				"the rushing river",
@@ -150,7 +150,7 @@ QUIZ_LIST <- [
 				"2",
 				"20",
 
-				"Marco...",
+				"Marco...(提示:他的游记让欧洲人得以了解中亚和中国，对东西发展有很大的贡献)",
 				"Polo",
 				"Yolo",
 				"Dolo",
@@ -161,14 +161,26 @@ QUIZ_LIST <- [
 				"6",
 				"8",
 				"9",
+				
+				"下列哪项拼写正确?(/ˌɪndɪˈstɪŋɡwɪʃəbl/ 无法分辨的)",
+				"Indistinguishable",
+				"Indistingishable",
+				"Induistingishable",
+				"Indestingushable",
 
+				"下列哪项拼写正确? (/mɪsɪˈsɪpi/ 密西西比)",
+				"Mississippi",
+				"Misisipi",
+				"Missisippi",
+				"Missisisippi",
+	
 				"如果John有两个苹果...\n那么一周有几天?",
 				"7",
 				"2",
 				"9",
 				"5",
 
-				"PP-bizon 的弹夹尺寸是多少?",
+				"PP-bizon 的弹夹容量是多少?",
 				"64",
 				"32",
 				"48",
@@ -215,6 +227,12 @@ QUIZ_LIST <- [
 				"59",
 				"70",
 				"48",
+	
+				"下列哪项拼写正确?(/ɪkˈskwɪzɪt/ 精美的)",
+				"Exquisite",
+				"Ecxquisite",
+				"Excquisite",
+				"Excuisite",
 
 				"'E=mc^2' 指的是什么?",
 				"质能方程",
@@ -222,7 +240,7 @@ QUIZ_LIST <- [
 				"声音的速度",
 				"无限",
 
-				"牛顿第二运动定律是什么?",
+				"牛顿第二定律公式是什么?",
 				"F=ma",
 				"p=mv",
 				"PV=nRT",
@@ -233,6 +251,12 @@ QUIZ_LIST <- [
 				"过度自信",
 				"无知",
 				"暴饮暴食",
+	
+				"美国总统奥巴马前一任是谁?",
+				"小布什",
+				"克林顿",
+				"特朗普",
+				"里根",
 
 				"重庆属于",
 				"直辖市",
@@ -251,7 +275,13 @@ QUIZ_LIST <- [
 				"日本",
 				"中国",
 				"印度",
-
+	
+				"你是怎样来到这世界上的",
+				"你最爱的父母",
+				"白鹳",
+				"一次实验中诞生的",
+				"魔光炉",
+				
 				"π=?",
 				"3.1415.",
 				"3.1427.",
@@ -263,6 +293,12 @@ QUIZ_LIST <- [
 				"748",
 				"764",
 				"510",
+	
+				"土豆是...?",
+				"一种蔬菜",
+				"一种水果",
+				"一种肉",
+				"一种蘑菇",
 
 				"中国有几个特别行政区?",
 				"两个",
@@ -294,11 +330,11 @@ QUIZ_LIST <- [
 				"橘黄色",
 				"蓝色",
 
-				"What's one of the secrets in spawn?",
-				"Blame Hichatu",
-				"Nothing",
-				"A button that gives you 300hp",
-				"A trail item",
+				"出生点有什么彩蛋?",
+				"sabe Hichatu",
+				"什么也没有",
+				"一个能让你回复到300血的按钮",
+				"一个彩虹屁神器",
 
 				"一米是?",
 				"100 厘米",
@@ -336,7 +372,7 @@ QUIZ_LIST <- [
 				"在木星和土星之间",
 				"在地球和金星之间",
 
-				"哪个国家在与鸸鹋的战争中输了?",
+				"哪个国家在与鸸鹋战争中输了?",
 				"澳大利亚",
 				"德国",
 				"泰国",
@@ -347,6 +383,12 @@ QUIZ_LIST <- [
 				"24",
 				"48",
 				"38",
+	
+				"180厘米等于多少英尺?(提示:1 英尺=30.48 厘米)",
+				"5.90",
+				"5.80",
+				"5.70",
+				"5.60",
 
 				"这张地图有多少幅画?",
 				"24",
@@ -365,6 +407,25 @@ QUIZ_LIST <- [
 				"Source Mapper Tool",
 				"Source World Editor",
 				"GoldSource Editor",
+	
+				"Elephant(大象) 有几个元音字母?",
+				"3",
+				"2",
+				"4",
+				"5",
+	
+	
+				"Pizzatime (披萨时间) 有几个辅音字母?",
+				"5",
+				"4",
+				"6",
+				"7",
+	
+				"Mako reactor (魔光炉) 有几个辅音字母?",
+				"6",
+				"5",
+				"4",
+				"7",
 
 				"英语字母表中 'M' 之前是什么?",
 				"L",
@@ -372,11 +433,11 @@ QUIZ_LIST <- [
 				"K",
 				"H",
 
-				"Is this a question?",
-				"Definitely",
-				"Not really",
-				"Absolutely positively not",
-				"No it's not",
+				"这是个问题吗?",
+				"肯定是",
+				"不确定",
+				"绝对不是",
+				"不，不是",
 
 				"月球的引力是多少?\n(地球引力百分比)",
 				"16.6%",
@@ -426,23 +487,35 @@ QUIZ_LIST <- [
 				"Quizmo questionare",
 				"Boner Questioning",
 
-				"Who made ze_ffvii_mako_reactor_v5?",
+				"ze_ffvii_mako_reactor_v5 作者是谁?",
 				"Hannibal",
 				"Kaemon",
 				"Enviolinador",
 				"Malgo",
 
-				"Who made ze_ffvii_mako_reactor_v6?",
+				"ze_ffvii_mako_reactor_v6 作者是谁?",
 				"Kaemon",
 				"Hannibal",
 				"Enviolinador",
 				"Malgo",
+	
+				"在Pirates Port Royal boss战中, 什么技能要按住s...",
+				"Vortex 旋涡",
+				"Waves 海浪",
+				"Barrels 炸药桶",
+				"Bubbles 泡泡",
+	
+				"下列哪张僵尸逃跑地图中没有跳刀元素?",
+				"ze_santassination_v3 狮子王",
+				"ze_S_A_M_v1_7 剑与魔法",
+				"ze_FFXIV_Wanderers_Palace_v5_2 最终幻想14：放浪古神殿v5",
+				"ze_FFVII_Mako_Reactor_v5_3_v5 最终幻想7：魔光炉",
 
-				"今年是2010年，谁是美国总统?",
-				"Barack Obama",
-				"George Bush",
-				"Donald Trump",
-				"Bill Clinton",
+				"2010年现任美国总统是?",
+				"奥巴马",
+				"小布什",
+				"特朗普",
+				"克林顿",
 
 				"什么是长臂猿?",
 				"灵长类动物",
@@ -600,18 +673,36 @@ QUIZ_LIST <- [
                 "1986",
                 "1982",
 
-				"水的另一个名字是什么?",
-				"氧化氢",
-				"二氧化二氢",
-				"氢",
-				"氧",
+				"水的化学式是什么?",
+				"H2O",
+				"H2O2",
+				"H2",
+				"O2",
 
 				"冰处于什么状态?",
 				"固体",
 				"液体",
 				"气体",
 				"等离子体",
-
+	
+				"下午2点 用24小时制表示?",
+				"14:00",
+				"2:00",
+				"12:00",
+				"20:00",
+					
+				"下列判断有误的一项是",
+				"我们学过的鲁迅的《故乡》、《藤野先生》都出自他的散文集《朝花夕拾》",
+				"《木兰诗》是我国南北朝时期北方的一首乐府民歌，它叙述了木兰女扮男装、代父从军、建功立业、辞官还乡的故事",
+				"在中国文学史上的“唐宋八大家”中，有苏氏三父子，他们是父亲苏洵，儿子苏轼和苏辙",
+				"莎士比亚是英国杰出的戏剧家和诗人。《威尼斯商人》是莎士比亚的著名喜剧",
+	
+				"下列函数中，y是x的一次函数的是 1.y=x-6; 2.y=-3x–1; 3.y=-0.6x; 4.y=7-x;",
+				"1,2,3,4",
+				"1,2,3",
+				"1,3,4",
+				"2,3,4",
+	
 				"在哪张地图上可以找到 '爆米花'?",
 				"Train",
 				"Nuke",
@@ -636,7 +727,7 @@ QUIZ_LIST <- [
 				"丛林之书",
 				"斑比",
 
-				"一字节等于多少位?",
+				"电脑中一字节(byte)等于多少位(bit)?",
 				"8",
 				"1",
 				"10",
@@ -677,12 +768,12 @@ QUIZ_LIST <- [
 				"西班牙",
 				"韩国",
 				"北美",
-
-				"Let's make this right as...",
-				"Rain",
-				"Left",
-				"Fuck",
-				"Hell",
+	
+				"Possession 社区是...",
+				"日本",
+				"西班牙",
+				"韩国",
+				"北美",
 
 
 
