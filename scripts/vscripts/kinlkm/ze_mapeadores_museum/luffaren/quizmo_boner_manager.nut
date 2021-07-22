@@ -15,7 +15,7 @@
 //	Finished in 1 day (2021-06-30)
 //	~2mb in total (.bsp + assets combined)
 //=========================================================================================================================================\\
-quiz_amount <- 5;					//amount quizzes to ask before triggering the finale
+quiz_amount <- 4;					//amount quizzes to ask before triggering the finale
 intermission_time <- 14.00;			//seconds to wait between quizzes (music playing + players killing caged people, etc) MIN:4.00, MAX:14.00
 quiz_time <- 10.00;					//seconds you have to answer by stepping on the right platform
 finale_bridge_delay <- 0.00;		//how many seconds to delay the finale-bridges rising up (making the defense shorter) MIN:0.00, MAX:25.00
