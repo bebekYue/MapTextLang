@@ -510,6 +510,24 @@ QUIZ_LIST <- [
 				"ze_S_A_M_v1_7 剑与魔法",
 				"ze_FFXIV_Wanderers_Palace_v5_2 最终幻想14：放浪古神殿v5",
 				"ze_FFVII_Mako_Reactor_v5_3_v5 最终幻想7：魔光炉",
+	
+				"下列哪张僵尸逃跑地图中没有弹幕或方块元素?",
+				"ze_yueyingchuanshuo 月影传说",
+				"ze_visualizer 监视者",
+				"ze_minimal_csgo 极病",
+				"ze_luciddreams 清醒的梦",
+	
+				"下列哪张僵尸逃跑地图不是卤粉图?",
+				"ze_halo_p3 光环",
+				"ze_interception_p2 窃听计划",
+				"ze_infiltration_final_r1 潜入行动",
+				"ze_halo_poa_p4 光环行动",
+	
+				"X社区中人类最多能同时携带几颗地雷?",
+				"1",
+				"2",
+				"3",
+				"没有限制",
 
 				"2010年现任美国总统是?",
 				"奥巴马",
@@ -662,17 +680,17 @@ QUIZ_LIST <- [
 				"你的速度",
 
 				"CS:GO 切刀移动速度是多少?",
-                "250 units/s",
-                "200 units/s",
-                "150 units/s",
-                "100 units/s",
+				"250 units/s",
+				"200 units/s",
+				"150 units/s",
+				"100 units/s",
 
 				"超级马里奥兄弟是哪一年出的?",
-                "1985",
-                "1983",
-                "1986",
-                "1982",
-
+				"1985",
+				"1983",
+				"1986",
+				"1982",
+	
 				"水的化学式是什么?",
 				"H2O",
 				"H2O2",
