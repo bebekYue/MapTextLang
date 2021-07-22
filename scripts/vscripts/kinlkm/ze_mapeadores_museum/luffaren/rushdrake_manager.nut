@@ -135,6 +135,7 @@ function PressedTrapperItem()
 	if(sc.uses<=0)
 	{
 		EntFireByHandle(caller,"Kill","",0.10,null,null);
+		EntFireByHandle(caller, "SetHealth", "-69", 0.10, null, null);
 		EntFireByHandle(sc.model,"Kill","",0.10,null,null);
 		EndTrapper(activator);
 	}
@@ -1011,7 +1012,7 @@ function TrapperTriggerTouched()		//when zombie steps on trapper-platform (wants
 	{
 		trappermaker=Entities.FindByName(null,"s_zitem_trapper_maker");
 		trappertxt = Entities.FindByName(null,"ii_luffaren_zitem_trapper_text");
-		trappertxt.__KeyValueFromString("message","你可以为人类布置陷阱 你可以放置("+::luffaren_trapper_item_uses.tostring()+"个陷阱 )\n"+
+		trappertxt.__KeyValueFromString("message","你可以为人类布置陷阱 你可以放置("+::luffaren_trapper_item_uses.tostring()+"个陷阱)\n"+
 		"当陷阱可放置时按E放置\n陷阱类型将由系统自动滚动选择\n"+
 		"你是隐形和无敌的\n你不能感染人类\n但是你可以飞行使用+WASD环顾四周\n"+
 		"一但设置玩所有陷阱,你就会死亡变成正常僵尸");
