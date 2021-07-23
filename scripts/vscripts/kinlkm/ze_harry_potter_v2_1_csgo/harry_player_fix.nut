@@ -5,7 +5,7 @@ BroomStick <- null;
 
 if((lvl_data<-Entities.FindByName(null, "why_map_data"))!=null){
     local pl_d=lvl_data.GetScriptScope().GetPlayerByHandle(self);
-    if(pl_d!=null&&pl_d.itemInfo!=null){
+    if(pl_d!=null&&pl_d.itemInfo!=""){
         ITEMLEVEL=pl_d.itemInfo;
     }
 }
