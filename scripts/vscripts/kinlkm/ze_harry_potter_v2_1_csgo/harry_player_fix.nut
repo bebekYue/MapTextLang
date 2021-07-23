@@ -3,6 +3,10 @@ ItemText <- "";
 ITEMLEVEL <- 0;
 BroomStick <- null;
 
+function TestFun(){
+    ScriptPrintMessageChatAll("harry_player_fix.nut-2021.7.23 22:31");
+}
+
 if((lvl_data<-Entities.FindByName(null, "why_map_data"))!=null){
     local pl_d=lvl_data.GetScriptScope().GetPlayerByHandle(self);
     if(pl_d!=null&&pl_d.itemInfo!=""){
