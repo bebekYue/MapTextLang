@@ -9,3 +9,7 @@ function RestoreItemLevel(pl){
         logText(e);
     }
 }
+
+function TestFun(){
+    ScriptPrintMessageChatAll("harry_potter_v2_1_csgo.nut-2021.7.23 22:30");
+}
