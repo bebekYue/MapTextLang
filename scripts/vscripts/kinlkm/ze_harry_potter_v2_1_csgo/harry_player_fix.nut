@@ -4,7 +4,7 @@ ITEMLEVEL <- 0;
 BroomStick <- null;
 
 function TestFun(){
-    ScriptPrintMessageChatAll("harry_player_fix.nut-2021.7.23 22:31");
+    ScriptPrintMessageChatAll("harry_player_fix.nut-2021.7.23 23:06");
 }
 
 if((lvl_data<-Entities.FindByName(null, "why_map_data"))!=null){
