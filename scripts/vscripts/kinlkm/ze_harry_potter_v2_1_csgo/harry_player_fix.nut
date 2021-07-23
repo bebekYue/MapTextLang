@@ -25,7 +25,7 @@ function AddLevel()
         ITEMLEVEL = 4;
     }
     if((lvl_data<-Entities.FindByName(null, "why_map_data"))!=null){
-        lvl_data.GetScriptScope().GetPlayerClassByHandle(self).itemInfo=ITEMLEVEL;
+        lvl_data.GetScriptScope().GetPlayerByHandle(self).itemInfo=ITEMLEVEL;
     }
 }
 
