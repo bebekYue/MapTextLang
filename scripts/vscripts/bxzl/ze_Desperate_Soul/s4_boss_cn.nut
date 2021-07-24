@@ -169,16 +169,16 @@ function Boss_Kaleda_Cast_7()
 
 function Boss_Kaleda_Cast_8()
 {
-	EntFire("Kaleda_Text","SetText","雷电吐息 \n|■---------| \n远离龙的正面",0.20,null);
-	EntFire("Kaleda_Text","SetText","雷电吐息 \n|■■--------| \n远离龙的正面",0.40,null);
-	EntFire("Kaleda_Text","SetText","雷电吐息 \n|■■■-------| \n远离龙的正面",0.60,null);
-	EntFire("Kaleda_Text","SetText","雷电吐息 \n|■■■■------| \n远离龙的正面",0.80,null);
-	EntFire("Kaleda_Text","SetText","雷电吐息 \n|■■■■■-----| \n远离龙的正面",1.00,null);
-	EntFire("Kaleda_Text","SetText","雷电吐息 \n|■■■■■■----| \n远离龙的正面",1.20,null);
-	EntFire("Kaleda_Text","SetText","雷电吐息 \n|■■■■■■■---| \n远离龙的正面",1.40,null);
-	EntFire("Kaleda_Text","SetText","雷电吐息 \n|■■■■■■■■--| \n远离龙的正面",1.60,null);
-	EntFire("Kaleda_Text","SetText","雷电吐息 \n|■■■■■■■■■-| \n远离龙的正面",1.80,null);
-	EntFire("Kaleda_Text","SetText","雷电吐息 \n|■■■■■■■■■■| \n远离龙的正面",2.00,null);
+	EntFire("Kaleda_Text","SetText","雷电吐息 \n|■---------| \n去左上角 或者 右上角",0.20,null);
+	EntFire("Kaleda_Text","SetText","雷电吐息 \n|■■--------| \n去左上角 或者 右上角",0.40,null);
+	EntFire("Kaleda_Text","SetText","雷电吐息 \n|■■■-------| \n去左上角 或者 右上角",0.60,null);
+	EntFire("Kaleda_Text","SetText","雷电吐息 \n|■■■■------| \n去左上角 或者 右上角",0.80,null);
+	EntFire("Kaleda_Text","SetText","雷电吐息 \n|■■■■■-----| \n去左上角 或者 右上角",1.00,null);
+	EntFire("Kaleda_Text","SetText","雷电吐息 \n|■■■■■■----| \n去左上角 或者 右上角",1.20,null);
+	EntFire("Kaleda_Text","SetText","雷电吐息 \n|■■■■■■■---| \n去左上角 或者 右上角",1.40,null);
+	EntFire("Kaleda_Text","SetText","雷电吐息 \n|■■■■■■■■--| \n去左上角 或者 右上角",1.60,null);
+	EntFire("Kaleda_Text","SetText","雷电吐息 \n|■■■■■■■■■-| \n去左上角 或者 右上角",1.80,null);
+	EntFire("Kaleda_Text","SetText","雷电吐息 \n|■■■■■■■■■■| \n去左上角 或者 右上角",2.00,null);
 	EntFire("Kaleda_Text","Display","",0.22,null);
 	EntFire("Kaleda_Text","Display","",0.42,null);
 	EntFire("Kaleda_Text","Display","",0.62,null);
