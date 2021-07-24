@@ -38,9 +38,11 @@
 | mappool  | [地图池控制系统](https://github.com/MapTextLang/MapTextLang/blob/master/其他修改说明.md) |
 | entwatch | [神器显示配置](https://github.com/MapTextLang/MapTextLang/blob/master/其他修改说明.md)   |
 | maptext  | [ZE地图翻译](https://github.com/MapTextLang/MapTextLang/blob/master/其他修改说明.md)     |
+| 翻译原文下载  | [ZE地图翻译 原文下载 请使用右键另存为保存文件](http://demo.wc38.com/ze-maptext-id-2539/)     |
+
 | bosshit  | [BOSS攻击奖励](https://github.com/MapTextLang/MapTextLang/blob/master/其他修改说明.md)   |
 | scripts  | [vscript脚本提交](https://github.com/MapTextLang/MapTextLang/blob/master/scripts/vscripts/README.md)   |
-| private_stripper_uploader.json  | [根据论坛UID允许上传私有Stripper](https://bbs.93x.net/plugin.php?id=xnet_mappost:p_stripper_post)    |
+| private_stripper_uploader.json  | [根据论坛UID允许上传私有Stripper](https://bbs.upkk.com/plugin.php?id=xnet_mappost:p_stripper_post)    |
 
 
 ---
