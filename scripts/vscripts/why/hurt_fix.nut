@@ -105,3 +105,24 @@ EntFireByHandle(move, "SetMeasureTarget", targetN, 0, self, self);
 EntFireByHandle(move, "Enable", "", 0, self, self);
 EntFireByHandle(move, "RunScriptFile", "why/base/checktokill.nut", 0.0, self, self);
 EntFireByHandle(move, "RunScriptCode", "SaveKillEnt(\""+targetN+"\",\""+hurtN+"\")", 0.1, self, self);
+
+x<-null;
+y<-null;
+z<-null;
+delay<-0.1;
+isSetAngel<-false;
+function ResetAngel(){
+	if(!isSetAngel)return;
+	EntFireByHandle(target, "addoutput", "angles 0 0 0", 0.0, null, null);
+	EntFireByHandle(self, "runscriptcode", "ResetAngel()", delay, null, null);
+}
+
+function SetAng(x,y,z){
+	this.x=x;
+	this.y=y;
+	this.z=z;
+	if(!isSetAngel){
+		isSetAngel=true;
+		ResetAngel();
+	}
+}
