@@ -55,7 +55,7 @@
 	"***ZM***"
 	{
 		"chi"		"**僵尸尸笼 提示:4个方向尸笼随机开1个**"
-    "DoorCountdown"		"-1"
+		"DoorCountdown"		"-1"
 	}
 	"***Shooting Star***"
 	{
@@ -64,7 +64,7 @@
 	"***Super Snow Storm***"
 	{
 		"chi"		"**超级暴风雪 提示:刷新2个轨道炮.保持移动**"
-    "DoorCountdown"		"-1"
+		"DoorCountdown"		"-1"
 	}
 	"***Suction Mist***"
 	{
