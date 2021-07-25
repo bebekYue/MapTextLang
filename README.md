@@ -39,7 +39,6 @@
 | entwatch | [神器显示配置](https://github.com/MapTextLang/MapTextLang/blob/master/其他修改说明.md)   |
 | maptext  | [ZE地图翻译](https://github.com/MapTextLang/MapTextLang/blob/master/其他修改说明.md)     |
 | 翻译原文下载  | [ZE地图翻译 原文下载 请使用右键另存为保存文件](http://demo.wc38.com/ze-maptext-id-2539/)     |
-
 | bosshit  | [BOSS攻击奖励](https://github.com/MapTextLang/MapTextLang/blob/master/其他修改说明.md)   |
 | scripts  | [vscript脚本提交](https://github.com/MapTextLang/MapTextLang/blob/master/scripts/vscripts/README.md)   |
 | private_stripper_uploader.json  | [根据论坛UID允许上传私有Stripper](https://bbs.upkk.com/plugin.php?id=xnet_mappost:p_stripper_post)    |
@@ -49,11 +48,11 @@
 
 ## 游戏中自动同步说明
 
-### 如果这里文件和服务器文件大小写不匹配 将无法同步成功 请务必通过[论坛查询地图](https://bbs.93x.net/plugin.php?id=xnet_mappost:xnet_map_query)文件名!
+### 如果这里文件和服务器文件大小写不匹配 将无法同步成功 请务必通过[论坛查询地图](https://bbs.upkk.com/plugin.php?id=xnet_mappost:xnet_map_query)文件名!
 
 1. 更新/添加修改/你想要的 通过创建 [Pull requests](https://github.com/MapTextLang/MapTextLang/pull/new/master)。就是通过编辑文件后创建PR
 
-2. 当您提交Pull Request后 在管理通过后 在论坛会 [显示事件](https://bbs.93x.net/plugin.php?id=xnet_events:xnet_events). 应该会显示事件 如果没有显示 可能没有成功 请加上一些无用注释 如`//`再提交一次 和原不同即可)
+2. 当您提交Pull Request后 在管理通过后 在论坛会 [显示事件](https://bbs.upkk.com/plugin.php?id=xnet_events:xnet_events). 应该会显示事件 如果没有显示 可能没有成功 请加上一些无用注释 如`//`再提交一次 和原不同即可)
 
 3. 游戏服务器会每隔地图更换 自动检测修改并同步 op / mapper可以输入 !git_update 强行同步 【同步后仍需要换一次该地图方可生效】
 **请不要在修改后的 10分钟内强制同步，因为数据尚未缓存而造成无法更新**
