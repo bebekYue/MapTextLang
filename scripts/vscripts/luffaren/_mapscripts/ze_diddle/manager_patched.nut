@@ -523,7 +523,7 @@ function RoundStart()
 		EntFire("server", "Command", "sm_rcon zr_infect_mzombie_ratio 6", 0.00, null);
 		EntFire("server", "Command", "sm_rcon sm_mine_limit 1", 0.00, null);
 		EntFire("server", "Command", "sm_rcon sm_xsys_config change xsys.knockback.multiplier 4.5", 0.00, null);
-		EntFire("server", "Command", "sm_rcon sm_xsys_config change xsys.knockback.airmultiplier 0.15", 0.00, null);
+		EntFire("server", "Command", "sm_rcon sm_xsys_config change xsys.knockback.airmultiplier 0.25", 0.00, null);
 		EntFire("server", "Command", "sm_rcon sm_xsys_config change xsys.money.rewardratio 0.65", 0.00, null);
 	}
 	humanitems_firstround = true;
