@@ -500,14 +500,14 @@ function RoundStart()
 	{
 		coins_max = coins_max_extrememode;
 		EntFire("manager", "RunScriptCode", "VoteMsg();", 4.00, null);
-		EntFire("server", "Command", "sm_he_limit 20", 0.00, null);
+		EntFire("server", "Command", "sm_he_limit 15", 0.00, null);
 		EntFire("server", "Command", "sm_smoke_limit 3", 0.00, null);
 		EntFire("server", "Command", "sm_rcon sm_molotov_limit 5", 0.00, null);
-		EntFire("server", "Command", "sm_rcon sm_taggrenade_limit 2", 0.00, null);
 		EntFire("server", "Command", "sm_rcon zr_infect_mzombie_ratio 7", 0.00, null);
 		EntFire("server", "Command", "sm_rcon sm_mine_limit 2", 0.00, null);
-		EntFire("server", "Command", "sm_rcon hook_boss_money_min 15", 0.00, null);
-		EntFire("server", "Command", "sm_rcon hook_boss_money_max 15", 0.00, null);
+		EntFire("server", "Command", "sm_rcon sm_xsys_config change xsys.knockback.multiplier 5.5", 0.00, null);
+		EntFire("server", "Command", "sm_rcon sm_xsys_config change xsys.knockback.airmultiplier 0.5", 0.00, null);
+		EntFire("server", "Command", "sm_rcon sm_xsys_config change xsys.money.rewardratio 0.8", 0.00, null);
 		exmvote_voteallowed = true;
 		EntFireByHandle(self, "RunScriptCode", " exmvote_voteallowed = false; ", 10.90, null, null);
 		ExevRoundStart();
@@ -522,6 +522,9 @@ function RoundStart()
 		EntFire("server", "Command", "sm_rcon sm_molotov_limit 2", 0.00, null);
 		EntFire("server", "Command", "sm_rcon zr_infect_mzombie_ratio 6", 0.00, null);
 		EntFire("server", "Command", "sm_rcon sm_mine_limit 1", 0.00, null);
+		EntFire("server", "Command", "sm_rcon sm_xsys_config change xsys.knockback.multiplier 4.5", 0.00, null);
+		EntFire("server", "Command", "sm_rcon sm_xsys_config change xsys.knockback.airmultiplier 0.15", 0.00, null);
+		EntFire("server", "Command", "sm_rcon sm_xsys_config change xsys.money.rewardratio 0.65", 0.00, null);
 	}
 	humanitems_firstround = true;
 	stageChosen = -1;
