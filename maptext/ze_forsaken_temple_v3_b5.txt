@@ -491,12 +491,12 @@
 	"** Temple door is opening soon **"
 	{
 		"chi"		"**庙门很快就会打开**"
-		"DoorCountdown"		"10"
+		"DoorCountdown"		"5"
 	}
 	"** You must defend until the door opens **"
 	{
 		"chi"		"**坚守至大门打开**"
-		"DoorCountdown"		"20"
+		"DoorCountdown"		"15"
 	}
 	"** Fixing the door. Keep defending! **"
 	{
