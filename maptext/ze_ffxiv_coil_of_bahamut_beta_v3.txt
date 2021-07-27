@@ -255,6 +255,7 @@
 	"**AFK 5s**"
 	{
 		"chi"		"**挂机玩家5秒后传送**"
+		"DoorCountdown"		"-1"
 	}
 	"**A player has picked up Electric **"
 	{
@@ -287,6 +288,7 @@
 	"**AFK 10s**"
 	{
 		"chi"		"**挂机玩家10秒后传送**"
+		"DoorCountdown"		"-1"
 	}
 	"**Defend 10s**"
 	{
@@ -330,7 +332,7 @@
 	}
 	"**Look! There is a teleporter**"
 	{
-		"chi"		"**看!这里有一个传送器**"
+		"chi"		"**看!这里有一个传送器,20秒后激活传送**"
 	}
 	"**Looks like he is Gabranth, what is he doing here**"
 	{
@@ -367,10 +369,12 @@
 	"**AFK 40s**"
 	{
 		"chi"		"**挂机玩家40秒后传送**"
+		"DoorCountdown"		"-1"
 	}
 	"**AFK 80s**"
 	{
 		"chi"		"**挂机玩家80秒后传送**"
+		"DoorCountdown"		"-1"
 	}
 	"**Defend 40s for the teleport**"
 	{
