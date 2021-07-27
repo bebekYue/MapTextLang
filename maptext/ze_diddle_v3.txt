@@ -234,6 +234,7 @@
 	"<== Get 5 !  ==>"
 	{
 		"chi"		">>>拿到5个<<<"
+		"DoorCountDown"		"-1"
 	}
 	"<== Get 4 !  ==>"
 	{
@@ -357,10 +358,12 @@
 	"*Push attack*"
 	{
 		"chi"		"**推力攻击**"
+		"DoorCountDown"		"3"
 	}
 	"*ground attack*"
 	{
 		"chi"		"**地面攻击（躲避地鼠）**"
+		"DoorCountDown"		"3"
 	}
 	"*The digletts died*"
 	{
@@ -377,10 +380,12 @@
 	"**laser attack**"
 	{
 		"chi"		"**激光攻击（注意躲避）**"
+		"DoorCountDown"		"3"
 	}
 	"**earthquake**"
 	{
 		"chi"		"**地震（跳上升起来的柱子）**"
+		"DoorCountDown"		"3"
 	}
 	"**the diglett is dead**"
 	{
@@ -445,10 +450,12 @@
 	"**fart attack**"
 	{
 		"chi"		"**放屁攻击**"
+		"DoorCountDown"		"3"
 	}
 	"**jizz attack right**"
 	{
 		"chi"		"**精液攻击-右**"
+		"DoorCountDown"		"3"
 	}
 	"**the dicklett has been killed**"
 	{
@@ -485,10 +492,12 @@
 	"***laser attack***"
 	{
 		"chi"		"**激光攻击（注意躲避）**"
+		"DoorCountDown"		"3"
 	}
 	"***earthquake***"
 	{
 		"chi"		"**地震（跳上升起的柱子）**"
+		"DoorCountDown"		"3"
 	}
 	"***Hey, doing well i see***"
 	{
@@ -518,14 +527,17 @@
 	"*Demon Turtle casts Spears*"
 	{
 		"chi"		"**恶魔海龟扔出了海矛**"
+		"DoorCountDown"		"3"
 	}
 	"*Demon Turtle casts Chill*"
 	{
 		"chi"		"**恶魔海龟使用了寒冰**"
+		"DoorCountDown"		"3"
 	}
 	"*Demon Turtle casts Water Blast*"
 	{
 		"chi"		"**恶魔海龟使用了水爆**"
+		"DoorCountDown"		"3"
 	}
 	"*Tiki 2 Broken*"
 	{
@@ -623,7 +635,7 @@
 	{
 		"chi"		"**剩余5秒**"
 	}
-	"***Fall Back***"
+	"***FALL BACK***"
 	{
 		"chi"		"**撤退**"
 	}
@@ -837,6 +849,7 @@
 	"**jizz attack left**"
 	{
 		"chi"		"**精液攻击-左**"
+		"DoorCountDown"		"3"
 	}
 	"father"
 	{
@@ -845,6 +858,7 @@
 	"**stomp attack**"
 	{
 		"chi"		"**踩踏攻击（跳上升起的柱子）**"
+		"DoorCountDown"		"3"
 	}
 	"***GET DIDDLING***"
 	{
@@ -1129,6 +1143,7 @@
 	"> QAZLLL456"
 	{
 		"chi"		"** **"
+		"DoorCountDown"		"-1"
 	}
 	"> THE ORDIAXER"
 	{
@@ -1209,6 +1224,7 @@
 	"**jizz attack mid**"
 	{
 		"chi"		"**精液攻击-中间**"
+		"DoorCountDown"		"3"
 	}
 	"there are probably AT LEAST 50 people in the world who likes to sniff cats buttholes"
 	{
@@ -1551,7 +1567,7 @@
 	}
 	"***DIDDLE EXTREME ACTIVATED***"
 	{
-		"chi"		"** **"
+		"chi"		"**Diddle ex模式已开启**"
 	}
 	"***PREPARE FOR ULTIMATE DIDDLING***"
 	{
@@ -1559,9 +1575,17 @@
 	}
 	"***REMOVING TORCHES IN 2 SECONDS...***"
 	{
-		"chi"		"** **"
+		"chi"		"**二秒钟后删除火把**"
 	}
 	"1"
+	{
+		"chi"		"** **"
+	}
+	"[EX 模式投票] 通过 - 处死全部人类"
+	{
+		"chi"		"** **"
+	}
+	"[普通 模式投票] 通过 - 处死全部人类"
 	{
 		"chi"		"** **"
 	}
