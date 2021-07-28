@@ -20,7 +20,6 @@ function SetNewOwner(){
 	if(COLOR_LIST.len()<1){Init()};
 	local weapon=caller;
 	local player=activator;
-	if(player.GetTeam()!=3)return;
 	if(player.GetScriptScope()==null){player.ValidateScriptScope()}
 	if(weapon.GetScriptScope()==null){weapon.ValidateScriptScope()}
 	weapon.GetScriptScope().pickupEvents<-true;
@@ -64,7 +63,7 @@ function Tick(){
 		EntFireByHandle(self, "runscriptcode", "Tick()", delay, null, null);
 		for(local i=0;i<WEAPON.len();i++){
 			local weapon=WEAPON[i];
-			if(!weapon.IsValid()||null==weapon.GetOwner()||!weapon.GetOwner().IsValid()||3!=weapon.GetOwner().GetTeam()){
+			if(!weapon.IsValid()||null==weapon.GetOwner()||!weapon.GetOwner().IsValid()){
 				if(""!=HIGH_LIGHT[i]){
 					EntFire("hl_glow_"+i.tostring(),"kill","",0,null);
 					HIGH_LIGHT[i]="";
@@ -74,6 +73,13 @@ function Tick(){
 					OLD_OWNER[i]="";
 				}
 			}else if(weapon.GetOwner()==OLD_OWNER[i]){
+				if(3!=weapon.GetOwner().GetTeam()){
+					if(""!=HIGH_LIGHT[i]){
+						EntFire("hl_glow_"+i.tostring(),"kill","",0,null);
+						HIGH_LIGHT[i]="";
+					}
+					continue;
+				}
 				if(HIGH_LIGHT[i]==""){
 					HIGH_LIGHT[i]=CreateGlow(weapon.GetOwner(),weapon,i);
 				}
@@ -82,7 +88,7 @@ function Tick(){
 				EntFireByHandle(self, "runscriptcode", "SetNewOwner()", 0, weapon.GetOwner(), weapon);
 			}
 		}
-		if(BUTTON_LIST.len()>0&&btn_msg_print){
+		if(BUTTON_LIST.len()>0){
 			InitBlockUseFix();
 		}
 	}
@@ -90,6 +96,7 @@ function Tick(){
 
 function hidePlayer(player,hide,index=-1){
 	if(!player.IsValid())return;
+	if(player.GetTeam()!=3&&hide)return;
 	local pscr=player.GetScriptScope();
 	if(pscr==null)return;
 	if(!("hide" in pscr))return;
@@ -112,6 +119,9 @@ function hidePlayer(player,hide,index=-1){
 }
 
 function CreateGlow(activator,object,index){
+	if(activator.GetTeam()!=3){
+		return "";
+	}
 	local weaponModel=object.GetModelName();
 	if(weaponModel.find("models/weapons/v_")==0){
 		weaponModel="models/weapons/w"+weaponModel.slice(16);
@@ -142,6 +152,7 @@ function CreateGlow(activator,object,index){
 
 function SetColor(index,needWait=true){
 	if(null==WEAPON[index].GetOwner())return;
+	if(HIGH_LIGHT[index]=="")return;
 	if(needWait){
 		EntFireByHandle(self, "runscriptcode", "SetColor("+index.tostring()+",false)", 1, null, null);
 		return;
@@ -190,7 +201,7 @@ function ClearPlayerHide(){
 function HideInit(){
 	IncludeScript("why/color_cfg.nut", this);
 	IncludeScript("why/map_cfg.nut", this);
-	ScriptPrintMessageChatAll(" \x03已加载神器隐身 20210719\x01");
+	ScriptPrintMessageChatAll(" \x03已加载神器隐身 20210728\x01");
 }
 
 self.ConnectOutput("OnSpawn", "HideInit");
@@ -210,18 +221,27 @@ function PlayerUseItem(){
 		EntFireByHandle(BUTTON_LIST[index], "press", "", 0.0, activator, null);
 	}
 }
+setUseScriptTick<-0;
 function InitBlockUseFix(){
-	local pl=null;
-	while ((pl = Entities.FindByClassname(pl, "player")) != null)
-	{
-		if(pl.ValidateScriptScope()){
-			if("InputUse" in pl.GetScriptScope())continue;
-			pl.GetScriptScope().InputUse <- function(){
-				EntFire("load_script", "runscriptcode", "PlayerUseItem()", 0.0, activator);
-				return true;
+	if(setUseScriptTick>0){
+		setUseScriptTick--;
+	}else{
+		setUseScriptTick=60;
+		local pl=null;
+		while ((pl = Entities.FindByClassname(pl, "player")) != null)
+		{
+			if(pl.ValidateScriptScope()){
+				if("InputUse" in pl.GetScriptScope())continue;
+				pl.GetScriptScope().InputUse <- function(){
+					EntFire("load_script", "runscriptcode", "PlayerUseItem()", 0.0, activator);
+					return true;
+				}
 			}
 		}
 	}
-	ScriptPrintMessageChatAll(" \x04附加功能已加载：神器按钮卡模型优化，附带升级版按E保护。 \x02实验性质功能，不完全保证能完全处理卡模型问题。");
-	btn_msg_print=false;
+	if(btn_msg_print){
+		ScriptPrintMessageChatAll(" \x04附加功能已加载：神器按钮卡模型优化，附带升级版按E保护。 \x02实验性质功能，不完全保证能完全处理卡模型问题，如发现问题请及时反馈。 ");
+		ScriptPrintMessageChatAll(" \x04另：该功能仅用于处理玩家卡模型和按钮，把神器塞到什么墙里按不到的情况概不负责 ——健忘症晚期");
+		btn_msg_print=false;
+	}
 }
