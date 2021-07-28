@@ -2,7 +2,7 @@
 
 function Mapinfo()
 {
-	EntFire("Game_text_map","SetText","地图作者: Runa(露娜) \n本地图还在测试中, 如果有任何问题请告诉我. \n部分模型取自 幻妖之森,天狼星和大瀑布 \n特别感谢 Headshooter & K & Tianli & Dakotec 和 i7 提供的模型帮助 \n翻译: 冰雪葬泪 \n已修复电不跟随移动和僵尸驱散无限减速问题",0.00,null);
+	EntFire("Game_text_map","SetText","地图作者: Runa(露娜) \n本地图还在测试中, 如果有任何问题请告诉我. \n部分模型取自 幻妖之森,天狼星和大瀑布 \n特别感谢 Headshooter & K & Tianli & Dakotec 和 i7 提供的模型帮助 \n翻译: 冰雪葬泪",0.00,null);
 	EntFire("Game_text_map", "Display", "", 0.05, null);
 }
 function Gravity()
@@ -27,7 +27,7 @@ function Peloton()
 }
 function ELECTRIC()
 {
-	EntFire("electric_Gametext","SetText","神器: 电 \n冷却: 65秒 \n效果: 释放一个跟随移动的电场 \n减速僵尸6秒 \n并最后定住僵尸1秒",0.00,null);
+	EntFire("electric_Gametext","SetText","神器: 电 \n冷却: 65秒 \n效果: 释放一个定点电场 \n减速僵尸6秒 \n并最后定住僵尸1秒",0.00,null);
 	EntFire("electric_Gametext", "Display", "", 0.05, null);
 }
 function HEAL()
