@@ -27,7 +27,7 @@ function Peloton()
 }
 function ELECTRIC()
 {
-	EntFire("electric_Gametext","SetText","神器: 电 \n冷却: 65秒 \n效果: 释放一个跟随移动的电场 \n减速僵尸6秒 n\并最后定住僵尸1秒",0.00,null);
+	EntFire("electric_Gametext","SetText","神器: 电 \n冷却: 65秒 \n效果: 释放一个跟随移动的电场 \n减速僵尸6秒 \n并最后定住僵尸1秒",0.00,null);
 	EntFire("electric_Gametext", "Display", "", 0.05, null);
 }
 function HEAL()
