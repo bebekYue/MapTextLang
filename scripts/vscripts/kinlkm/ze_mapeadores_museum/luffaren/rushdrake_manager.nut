@@ -16,7 +16,7 @@
 //=========================================================================================================================================\\
 //		[VARIABLES]							//you can override these via stripper, just make sure to do it *every* round start at ~1.00s post-spawn
 ::luffaren_skycam_scale <- 16.00;			//must match sky_camera scale (if !=16 > recompile skybox props: "skyref_X.mdl")
-::luffaren_zblockstart_time <- 15.00;		//how long to keep zombies trapped at the start, allowing slower humans some breathing room
+::luffaren_zblockstart_time <- 20.00;		//how long to keep zombies trapped at the start, allowing slower humans some breathing room
 ::luffaren_itemkill_trailboy <- false;		//set to 'true' to kill the trail-boy (cosmetic) item when the stage ends
 ::luffaren_itemkill_magmapush <- false;		//set to 'true' to kill the magmapush (non-cosmetic) item when the stage ends
 ::luffaren_trapper_item_maxspawns <- 3;		//how many zombie-trapper items there can be at max
