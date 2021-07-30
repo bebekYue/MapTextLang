@@ -22,7 +22,7 @@
 	}
 	"Magical Piece of shit moves in 20 Seconds!"
 	{
-		"chi"		"**2魔法平台0秒后移动！ **"
+		"chi"		"**魔法平台20秒后移动！ **"
 	}
 	"Magical Piece of shit moves in 5 Seconds!"
 	{
