@@ -5,8 +5,19 @@ cd3 <- 55
 cd4 <- 10
 kg <- Entities.FindByName(null, "boss_phys_spider")
 times <- 10
+kg <- false
 
 
+
+function kk()
+{
+	if(!kg)
+	{
+	printl("开");
+	}
+	else
+	printl("关");
+}
 
 
 
@@ -108,11 +119,13 @@ function wb()
 
 function show()
 {
-	printl("--");
+	printl("--f");
 }
 
 
-
+sqmaker <- Entities.CreateByClassname("env_entity_maker");
+sqmaker.__KeyValueFromString("targetname","sqmaker");
+sqmaker.__KeyValueFromString("EntityTemplate","s_wr");
 
 fallfilter <- Entities.CreateByClassname("filter_damage_type");
 fallfilter.__KeyValueFromString("targetname","fallfilter");
