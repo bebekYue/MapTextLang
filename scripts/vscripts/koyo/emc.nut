@@ -5,19 +5,9 @@ cd3 <- 55
 cd4 <- 10
 kg <- Entities.FindByName(null, "boss_phys_spider")
 times <- 10
-kg <- false
 
 
 
-function kk()
-{
-	if(!kg)
-	{
-	printl("开");
-	}
-	else
-	printl("关");
-}
 
 
 
@@ -47,19 +37,6 @@ function dmgft()
 }
 
 
-function bmcd()
-{
-	EntFireByHandle(self, "runscriptcode", "bmcd()", 1, null, null);
-	if(cd !=0 )
-	{
-		cd--;
-		gt.__KeyValueFromString("message","           大招冷却时间 : "+cd.tostring());						
-	}
-	else
-	{
-	 gt.__KeyValueFromString("message","           大招准备完毕√");	
-	}
-}
 
 function killglock()
 {
@@ -119,7 +96,7 @@ function wb()
 
 function show()
 {
-	printl("--f");
+	printl("test");
 }
 
 
