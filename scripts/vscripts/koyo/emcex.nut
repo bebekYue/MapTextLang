@@ -54,6 +54,7 @@ function think()
 	EntFire("boss_addhp_counter", "SetValue", 10, 1.5, null);
 	EntFire("s_stonelaunch", "addoutput", "origin -14456 14480 14500", 2, null);
 	EntFireByHandle(self,"runscriptcode","spawnys()",35,activator,activator);
+	EntFire("stage_1","runscriptcode","yunshi=true",0, null);
 	
 
 	EntFire("s_ghost", "addoutput", "origin -14484 14919 14655", 32.5, null);
