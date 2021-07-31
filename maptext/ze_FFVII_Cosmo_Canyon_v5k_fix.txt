@@ -83,7 +83,7 @@
 	}
 	"**A player has picked up FIRE materia**"
 	{
-		"chi"		"**一位玩家找到了火元素**"
+		"chi"		"**一位玩家捡起了火**"
 	}
 	"**THE EXPLOSIVE WILL BLOW UP THE ROCK IN 25 SECONDS**"
 	{
@@ -147,11 +147,12 @@
 	}
 	"**SOME OF YOUR ITEMS CAN DAMAGE THE BOSS**"
 	{
-		"chi"		"**5---部分神器能对BOSS造成伤害(火、电、毒、终极)**"
+		"chi"		"**部分神器能对BOSS造成伤害(火、电、毒、终极)----5**"
 	}
 	"**Gi Nattak is using wind**"
 	{
 		"chi"		"**5---基纳塔克使用了风-面对平台中心按W抵抗**"
+		"DoorCountdown"		"5"
 	}
 	"**Gi Nattak has healed 150 hp**"
 	{
@@ -161,6 +162,7 @@
 	"**Gi Nattak is using aspil**"
 	{
 		"chi"		"**5---基纳塔克使用了摄魂-蹲下**"
+		"DoorCountdown"		"5"
 	}
 	"**Gi Nattak is spawning minions. Watch out for them**"
 	{
@@ -169,10 +171,12 @@
 	"**Gi Nattak is using gravity**"
 	{
 		"chi"		"**5---基纳塔克使用了黑洞-按住S后退**"
+		"DoorCountdown"		"5"
 	}
 	"**Gi Nattak is using Fire Nova!!! Get out of middle**"
 	{
 		"chi"		"**5---基纳塔克使用了火焰新星-跑到平台边缘躲避**"
+		"DoorCountdown"		"5"
 	}
 	"**Gi Nattak is using fire**"
 	{
@@ -181,6 +185,7 @@
 	"**Gi Nattak is using poison**"
 	{
 		"chi"		"**5---基纳塔克使用了剧毒-远离人群**"
+		"DoorCountdown"		"4"
 	}
 	"**Gi Nattak is using shield**"
 	{
@@ -241,7 +246,7 @@
 	}
 	"**Zombie Confuse has been picked up**"
 	{
-		"chi"		"**僵尸致盲已被拿起**"
+		"chi"		"**僵尸致盲已被捡起**"
 	}
 	"**A player has picked up BIO materia**"
 	{
@@ -327,10 +332,12 @@
 	"**GI NATTAK USES LAVA SUPERATTACK**"
 	{
 		"chi"		"**10---基纳塔克使用了熔岩上升**"
+		"DoorCountdown"		"10"
 	}
 	"**Get on the rocks to get saved!!!**"
 	{
 		"chi"		"**10---基纳塔克使用了熔岩上升,快跑到突起的石头上!**"
+		"DoorCountdown"		"5"
 	}
 	"[Genesis] Huh.. Did not think that you will survive.."
 	{
@@ -362,7 +369,7 @@
 	}
 	"**A player has picked up EARTH materia**"
 	{
-		"chi"		"**一位玩家找到了土元素**"
+		"chi"		"**一位玩家捡起了土**"
 	}
 	"**The airship to Shinra will arrive in 30 seconds**"
 	{
@@ -437,6 +444,7 @@
 	"**We got the power. The gates will open in 15 seconds**"
 	{
 		"chi"		"**电力恢复了-大门15秒后打开**"
+		"DoorCountdown"		"15"
 	}
 	"** Nades do more damage. **"
 	{
@@ -535,26 +543,26 @@
 	}
 	"**Zombie cactus has been picked up**"
 	{
-		"chi"		"**僵尸仙人掌已拿到**"
+		"chi"		"**僵尸仙人掌已被捡起**"
 	}
 	"**Jenova is defeated!**"
 	{
-		"chi"		"**杰诺瓦已失去战斗力**"
+		"chi"		"**杰诺瓦已被击败**"
 		"ico"		"icon_tip"
 	}
 	"**Shiva is defeated!**"
 	{
-		"chi"		"**希瓦已失去战斗力**"
+		"chi"		"**希瓦已被击败**"
 		"ico"		"icon_tip"
 	}
 	"**Ifrit is defeated!**"
 	{
-		"chi"		"**伊芙利特已失去战斗力**"
+		"chi"		"**伊芙利特已被击败**"
 		"ico"		"icon_tip"
 	}
 	"**The rock will explode in 25 seconds**"
 	{
-		"chi"		"**岩石将在25秒后爆炸（哑弹，请走屋内后门，门提前五秒开）**"
+		"chi"		"**岩石将在25秒后爆炸（哑弹，请进小屋）**"
 	}
 	"**The detonator seems to be broken**Go another way**"
 	{
@@ -580,20 +588,29 @@
 	{
 		"chi"		"**在僵尸把我们变为他们的同类前防守30秒-我来为你们打开酒馆后门**"
 	}
-	"[Red-XIII] Hope he will not escape this time� I afraid that we could attract extra attention.."
+	"[Red-XIII] Hope he will not escape this time� I afraid that we could attract extra attention.."
 	{
-		"chi"		"** **"
+		"chi"		"**[赤红13]希望这次不要再让他逃了.但是我怕会引起更多注意**"
 	}
 	"**Chest Quest completed!**"
 	{
-		"chi"		"** **"
+		"chi"		"**宝箱任务完成**"
 	}
 	"**The reward is waiting for you in the gi cave**"
 	{
-		"chi"		"** **"
+		"chi"		"**奖励正在基纳塔克洞穴内等你来拿！**"
 	}
 	"**A player has picked up Phoenix Down**"
 	{
-		"chi"		"** **"
+		"chi"		"**一位玩家拾取了凰之尾**"
+	}
+	"**arning：3 blue laser**"
+	{
+		"chi"		"**注意：最后3蓝刀**"
+		"DoorCountdown"		"7"
+	}
+	"**Only 1 blue laser**"
+	{
+		"chi"		"**最后一蓝刀**"
 	}
 }
