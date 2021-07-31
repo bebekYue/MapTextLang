@@ -3,6 +3,7 @@ ex <- false
 weat <- null
 yunshi <- true
 slogra<-true
+
 function think()
 {
 	local extext = Entities.CreateByClassname("game_text");
@@ -17,6 +18,7 @@ function think()
 	extext.__KeyValueFromInt("spawnflags",1);
 	extext.__KeyValueFromInt("channel",3);
 	extext.__KeyValueFromInt("effect",2);
+	reflash();
 	if(ex)
 	{
 	EntFire("weather_math", "kill", null, 1, null);EntFire("g_npc_buff_health", "enable", null, 0, null);
@@ -66,6 +68,7 @@ function think()
  	EntFire("event_case_s1", "addoutput", "oncase03 stage_1:runscriptcode:yunshi=false:0:-1", 1, null);
  	EntFire("event_case_s1", "addoutput", "oncase03 stage_1:runscriptcode:yunshi=true:19:-1", 1, null);
  	EntFire("event_case_s1", "addoutput", "oncase03 stage_1:runscriptcode:spawnys():19.5:-1", 1, null);
+ 	EntFire("event_case_s1", "addoutput", "oncase04 stage_1:runscriptcode:yunshi=false:0:-1", 1, null);
 
  	EntFire("event_case_s1", "addoutput", "oncase02 s_ghost:forcespawn::21:-1", 1, null);
  	EntFire("event_case_s1", "addoutput", "oncase02 s_ghost:addoutput:origin -13865 14919 14655:21.5:-1", 1, null);
@@ -261,4 +264,15 @@ function slash()
    } 
 }
 
+
+function reflash()
+{
+	pl <- null;
+	while(null != (pl = Entities.FindByClassname(pl, "player"))){
+	if(pl.GetTeam() == 2){
+	EntFire(pl, "AddOutput", "rendermode 0",0, null);
+    EntFireByHandle(pl, "AddOutput", "rendermode 0", 0.0, null, null);}
+    EntFireByHandle(self,"runscriptcode","reflash()",1,null,null);
+}
+}
 
