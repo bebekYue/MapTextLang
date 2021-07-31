@@ -48,9 +48,7 @@ function PlayerUse(uid,eid) {
     if (GameEventsCapturedPlayer != null && eid == 0) {
         local script_scope = GameEventsCapturedPlayer.GetScriptScope();
         script_scope.userid <- uid;
-        if(uid!="BOT"){
-            SetPlayerHandle(uid,GameEventsCapturedPlayer);
-        }
+        SetPlayerHandle(uid,GameEventsCapturedPlayer);
         GameEventsCapturedPlayer = null;
     }
 }
@@ -61,8 +59,7 @@ class Player{
     handle = null;
     connected = true;
     itemInfo = "";
-    constructor(_u,_s,_n){userid=_u;steamid=_s;name=_n;}
-    constructor(_u){userid=_u;}
+    constructor(_u,_s="",_n=""){userid=_u;steamid=_s;name=_n;}
 }
 PLAYER_LIST<-[];
 function GetPlayerByUid(uid){
@@ -99,6 +96,7 @@ function SetPlayerHandle(uid,handle){
     RestoreItemLevel(pl);
     return true;
 }
+set_bot_data<-false;
 function Think() {
     //if("LevelInit" in self.GetScriptScope()){LevelInit();}
     if ( gameevents_proxy==null || !gameevents_proxy.IsValid() ) {
@@ -107,7 +105,7 @@ function Think() {
         gameevents_proxy.__KeyValueFromInt("range",0);
     }
     player <- null;
-    while( (player = Entities.FindByClassname(player,"*")) != null ) {
+    while( (player = Entities.FindByClassname(player,set_bot_data?"*":"player")) != null ) {
         if (player.GetClassname() == "player") {
             if (player.ValidateScriptScope()) {
                 local script_scope=player.GetScriptScope()
@@ -123,7 +121,7 @@ function Think() {
 }
 function Init(){
     if("LevelInit" in self.GetScriptScope()){LevelInit();}
-    ScriptPrintMessageChatAll(" \x07玩家等级保存已加载，如果存在任何问题请直接联系；by：健忘症晚期-2021-06-21\x01");
+    ScriptPrintMessageChatAll(" \x07玩家等级保存已加载，如果存在任何问题请直接联系；by：健忘症晚期-2021-07-31\x01");
 }
 function Connected(uid,sid,name){
     if(sid=="BOT")return;
