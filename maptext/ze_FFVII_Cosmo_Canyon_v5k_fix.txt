@@ -83,7 +83,7 @@
 	}
 	"**A player has picked up FIRE materia**"
 	{
-		"chi"		"**一位玩家捡起了火**"
+		"chi"		"**一位玩家找到了火元素**"
 	}
 	"**THE EXPLOSIVE WILL BLOW UP THE ROCK IN 25 SECONDS**"
 	{
@@ -147,12 +147,11 @@
 	}
 	"**SOME OF YOUR ITEMS CAN DAMAGE THE BOSS**"
 	{
-		"chi"		"**部分神器能对BOSS造成伤害(火、电、毒、终极)----5**"
+		"chi"		"**5---部分神器能对BOSS造成伤害(火、电、毒、终极)**"
 	}
 	"**Gi Nattak is using wind**"
 	{
 		"chi"		"**5---基纳塔克使用了风-面对平台中心按W抵抗**"
-		"DoorCountdown"		"5"
 	}
 	"**Gi Nattak has healed 150 hp**"
 	{
@@ -162,7 +161,6 @@
 	"**Gi Nattak is using aspil**"
 	{
 		"chi"		"**5---基纳塔克使用了摄魂-蹲下**"
-		"DoorCountdown"		"5"
 	}
 	"**Gi Nattak is spawning minions. Watch out for them**"
 	{
@@ -171,12 +169,10 @@
 	"**Gi Nattak is using gravity**"
 	{
 		"chi"		"**5---基纳塔克使用了黑洞-按住S后退**"
-		"DoorCountdown"		"5"
 	}
 	"**Gi Nattak is using Fire Nova!!! Get out of middle**"
 	{
 		"chi"		"**5---基纳塔克使用了火焰新星-跑到平台边缘躲避**"
-		"DoorCountdown"		"5"
 	}
 	"**Gi Nattak is using fire**"
 	{
@@ -185,7 +181,6 @@
 	"**Gi Nattak is using poison**"
 	{
 		"chi"		"**5---基纳塔克使用了剧毒-远离人群**"
-		"DoorCountdown"		"4"
 	}
 	"**Gi Nattak is using shield**"
 	{
@@ -246,7 +241,7 @@
 	}
 	"**Zombie Confuse has been picked up**"
 	{
-		"chi"		"**僵尸致盲已被捡起**"
+		"chi"		"**僵尸致盲已被拿起**"
 	}
 	"**A player has picked up BIO materia**"
 	{
@@ -332,12 +327,10 @@
 	"**GI NATTAK USES LAVA SUPERATTACK**"
 	{
 		"chi"		"**10---基纳塔克使用了熔岩上升**"
-		"DoorCountdown"		"10"
 	}
 	"**Get on the rocks to get saved!!!**"
 	{
 		"chi"		"**10---基纳塔克使用了熔岩上升,快跑到突起的石头上!**"
-		"DoorCountdown"		"5"
 	}
 	"[Genesis] Huh.. Did not think that you will survive.."
 	{
@@ -369,7 +362,7 @@
 	}
 	"**A player has picked up EARTH materia**"
 	{
-		"chi"		"**一位玩家捡起了土**"
+		"chi"		"**一位玩家找到了土元素**"
 	}
 	"**The airship to Shinra will arrive in 30 seconds**"
 	{
@@ -444,7 +437,6 @@
 	"**We got the power. The gates will open in 15 seconds**"
 	{
 		"chi"		"**电力恢复了-大门15秒后打开**"
-		"DoorCountdown"		"15"
 	}
 	"** Nades do more damage. **"
 	{
@@ -543,26 +535,26 @@
 	}
 	"**Zombie cactus has been picked up**"
 	{
-		"chi"		"**僵尸仙人掌已被捡起**"
+		"chi"		"**僵尸仙人掌已拿到**"
 	}
 	"**Jenova is defeated!**"
 	{
-		"chi"		"**杰诺瓦已被击败**"
+		"chi"		"**杰诺瓦已失去战斗力**"
 		"ico"		"icon_tip"
 	}
 	"**Shiva is defeated!**"
 	{
-		"chi"		"**希瓦已被击败**"
+		"chi"		"**希瓦已失去战斗力**"
 		"ico"		"icon_tip"
 	}
 	"**Ifrit is defeated!**"
 	{
-		"chi"		"**伊芙利特已被击败**"
+		"chi"		"**伊芙利特已失去战斗力**"
 		"ico"		"icon_tip"
 	}
 	"**The rock will explode in 25 seconds**"
 	{
-		"chi"		"**岩石将在25秒后爆炸（哑弹，请进小屋）**"
+		"chi"		"**岩石将在25秒后爆炸（哑弹，请走屋内后门，门提前五秒开）**"
 	}
 	"**The detonator seems to be broken**Go another way**"
 	{
