@@ -18,7 +18,6 @@ function think()
 	extext.__KeyValueFromInt("spawnflags",1);
 	extext.__KeyValueFromInt("channel",3);
 	extext.__KeyValueFromInt("effect",2);
-	reflash();
 	if(ex)
 	{
 	EntFire("weather_math", "kill", null, 1, null);EntFire("g_npc_buff_health", "enable", null, 0, null);
@@ -266,14 +265,4 @@ function slash()
 }
 
 
-function reflash()
-{
-	pl <- null;
-	while(null != (pl = Entities.FindByClassname(pl, "player"))){
-	if(pl.GetTeam() == 2){
-	EntFire(pl, "AddOutput", "rendermode 0",0, null);
-    EntFireByHandle(pl, "AddOutput", "rendermode 0", 0.0, null, null);}
-    EntFireByHandle(self,"runscriptcode","reflash()",1,null,null);
-}
-}
 
