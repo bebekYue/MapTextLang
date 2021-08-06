@@ -14,18 +14,22 @@ const LOG_MSG=4;
     }
 }
 ::logTableText <- function(table){
-    local text="";
-    foreach(k,v in table){
-        text=text+k+":::"+v+",,";
-    }
-    if(LOG_LEVEL&1){
-        printl(text);
-    }
-    if(LOG_LEVEL&2){
-        ScriptPrintMessageChatAll(" \x04脚本debug\x01："+text);
-    }
-    if(LOG_LEVEL&4){
-        ScriptPrintMessageCenterAll("<font color='#00ff00'>脚本debug："+text+"</font>");
+    try{
+        local text="";
+        foreach(k,v in table){
+            text=text+k+":::"+v+",,";
+        }
+        if(LOG_LEVEL&1){
+            printl(text);
+        }
+        if(LOG_LEVEL&2){
+            ScriptPrintMessageChatAll(" \x04脚本debug\x01："+text);
+        }
+        if(LOG_LEVEL&4){
+            ScriptPrintMessageCenterAll("<font color='#00ff00'>脚本debug："+text+"</font>");
+        }
+    }catch(e){
+        logText(e);
     }
 }
 SAVE_LEVEL_SWITCH<-true;
@@ -180,5 +184,8 @@ function GetPlayerInfo(uid){
         ScriptPrintMessageChatAll(" \x02玩家信息不存在，可能是uid错误\x01");
         return;
     }
-    ScriptPrintMessageChatAll(format(" \x04玩家名：%s；steamid：%s；是否在服务器中：%s；等级信息：%s\x01",pl.name,pl.steamid,pl.connected.tostring(),pl.itemInfo.tostring()));
+    ScriptPrintMessageChatAll(" \x04玩家名："+pl.name+"；steamid："+pl.steamid+"；是否在服务器中："+pl.connected+"；等级信息："+pl.itemInfo+"；玩家捕获："+pl.handle+"\x01");
+}
+function GPI(uid){
+    GetPlayerInfo(uid);
 }
