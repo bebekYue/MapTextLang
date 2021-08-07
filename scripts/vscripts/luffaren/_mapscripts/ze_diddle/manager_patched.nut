@@ -579,7 +579,10 @@ function RoundStart()
 				if(stagepool.len()>=4)	//stripper #4 had '5'
 				{
 					exmvote_voteallowed = true;
-					EntFireByHandle(self, "RunScriptCode", " ExemVoteAutoAFKVote(); ", 10.00, null, null);
+					if(exmvote_playercount > 15)
+					{
+						EntFireByHandle(self, "RunScriptCode", " ExemVoteAutoAFKVote(); ", 10.00, null, null);
+					}
 					EntFireByHandle(self, "RunScriptCode", " exmvote_voteallowed = false; ", 10.90, null, null);
 				}
 				EntFireByHandle(self, "RunScriptCode", " PickStage(); ", 11.00 + stagepickdelay, null, null);
