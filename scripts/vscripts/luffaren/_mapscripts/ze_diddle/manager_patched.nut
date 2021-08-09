@@ -555,13 +555,13 @@ function RoundStart()
 			local shopcheatrng = RandomInt(0,100);
 			if(shopcheatrng > 50)
 			{
-				EntFire("stripstrop_shopcheat","AddOutput","origin 4488 880 600",0.00,null);
+				EntFire("stripstrop_diddlefriend","AddOutput","origin 4488 880 600",0.00,null);
 				EntFire("stripstrop_diddlefriend","AddOutput","origin 4488 1168 600",0.00,null);
 			}
 			else
 			{
 				EntFire("stripstrop_diddlefriend","AddOutput","origin 4488 880 600",0.00,null);
-				EntFire("stripstrop_shopcheat","AddOutput","origin 4488 1168 600",0.00,null);
+				EntFire("stripstrop_diddlefriend","AddOutput","origin 4488 1168 600",0.00,null);
 			}
 			specdevils.clear();
 			shopangels.clear();
