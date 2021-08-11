@@ -858,7 +858,7 @@
 	}
 	"***MAP MADE BY - LUFFAREN***"
 	{
-		"chi"		"**地图制作 LUFFAREN  地图翻译 好奇宝宝 艾莉卡**"
+		"chi"		"**地图制作 LUFFAREN  地图翻译 好奇宝宝 艾莉卡 地图修复 血色的龙琉璃 秋刀鱼**"
 	}
 	"***MAP RESET - GOING BACK TO PROLOUGE***"
 	{
