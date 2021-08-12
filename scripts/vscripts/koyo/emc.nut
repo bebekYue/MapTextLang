@@ -22,6 +22,25 @@ catext.__KeyValueFromInt("channel",5);
 catext.__KeyValueFromInt("effect",2);
 catext.__KeyValueFromString("message","┏━━━━━━━┓\n┃   "+cannon1+"     ┃     "+cannon2+"   ┃\n┗━━━━━━━┛\n       [船舱大炮]");
 
+pl <- null;
+function refresh()
+{
+	
+	while(null != (pl = Entities.FindByClassname(pl, "player")))
+	{
+	if(pl.GetTeam() == 2)
+	{
+
+    EntFireByHandle(pl, "AddOutput", "rendermode 0", 0.0, pl, pl);
+
+	}
+  
+	}
+
+  EntFireByHandle(self,"runscriptcode","refresh()",1,null,null);
+}
+
+
 function cannoncd()
 {
 	
