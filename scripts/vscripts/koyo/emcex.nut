@@ -308,25 +308,9 @@ function slash()
 	if(slogra)
 	{
  	EntFire("s_slash_maker", "forcespawn", null,0, null);
- 	EntFireByHandle(self,"runscriptcode","slash()",0.3,activator,activator);
+ 	EntFireByHandle(self,"runscriptcode","slash()",0.5,activator,activator);
    } 
 }
 
-pl <- null;
-function refresh()
-{
-	
-	while(null != (pl = Entities.FindByClassname(pl, "player")))
-{
-	if(pl.GetTeam() == 2)
-{
 
-    EntFireByHandle(pl, "AddOutput", "rendermode 0", 0.0, pl, pl);
-
-}
-    EntFireByHandle(self,"runscriptcode","refresh()",1,null,null);
-}
-
-
-}
 
