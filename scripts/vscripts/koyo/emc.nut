@@ -40,7 +40,6 @@ function refresh()
   EntFireByHandle(self,"runscriptcode","refresh()",1,null,null);
 }
 
-
 function cannoncd()
 {
 	
@@ -110,7 +109,7 @@ function triggercannon()
 
 function speedalucard()
 {
-	EntFire("game_speed", "modifyspeed", 1.25, 0, activator);
+	EntFire("game_speed", "modifyspeed", 1.4, 0, activator);
 	EntFire("game_speed", "modifyspeed", 1, 15, activator);
 }
 
@@ -195,7 +194,7 @@ function countdown2()
 
 function wb()
 {
-	ScriptPrintMessageChatAll(" \x02 --------- 弱点打击状态:神器与高爆此时能对BOSS造成大量伤害与硬直:持续10秒 (此状态随机出现)");
+	ScriptPrintMessageChatAll(" \x02  弱点打击状态:神器与高爆此时能对BOSS造成大量伤害与硬直:持续10秒 (此状态随机出现)");
 
 }
 
@@ -221,7 +220,7 @@ sqmaker.__KeyValueFromString("EntityTemplate","s_wr");
 
 fallfilter <- Entities.CreateByClassname("filter_damage_type");
 fallfilter.__KeyValueFromString("targetname","fallfilter");
-fallfilter.__KeyValueFromFloat("damagetype",262144);
+fallfilter.__KeyValueFromFloat("damagetype",0);
 fallfilter.__KeyValueFromFloat("Negated",0);
 fallfilter2 <- Entities.CreateByClassname("filter_damage_type");
 fallfilter2.__KeyValueFromString("targetname","fallfilter2");
