@@ -19,7 +19,10 @@ function think()
 	extext.__KeyValueFromInt("spawnflags",1);
 	extext.__KeyValueFromInt("channel",3);
 	extext.__KeyValueFromInt("effect",2);
-	stagecount();
+	EntFireByHandle(self,"runscriptcode","stagecount()",101,activator,activator);
+	ScriptPrintMessageChatAll(" \x10 --------- EX stripper 日期 2021.8.12 编写: koyo 回合计数:"+countbf+"---------");
+	if(ex)
+	{
 	EntFire("skybox_s1_monster", "addoutput", "rendercolor 255 80 80", 11, null);
 	EntFire("boss_ogre_model", "addoutput", "rendercolor 255 80 80", 1, null);
 	EntFire("boss_slogra_model", "addoutput", "rendercolor 255 80 80", 1, null);
@@ -27,9 +30,6 @@ function think()
 	EntFire("boss_swampmonster_model", "addoutput", "rendercolor 255 80 80", 1, null);
 	EntFire("boss_spiderqueen_model", "addoutput", "rendercolor 255 80 80", 1, null);
 	EntFire("boss_snowtitan_model", "addoutput", "rendercolor 255 80 80", 1, null);
-	ScriptPrintMessageChatAll(" \x10 --------- EX stripper 日期 2021.8.12 编写: koyo 回合计数:"+countbf+"---------");
-	if(ex)
-	{
 	EntFire("weather_math", "kill", null, 1, null);EntFire("g_npc_buff_health", "enable", null, 0, null);
 	EntFire("weather_case_clear", "kill", null, 1, null);
 	EntFire("s_zw", "addoutput", "origin 343.282288 -709.780945 -7900", 10, null);
@@ -182,10 +182,18 @@ function think()
  	EntFire("event_case_s3", "addoutput", "oncase11 stage_1:runscriptcode:slogra=true:0:-1", 0, null);
 	break;
 	case 4:
-	extext.__KeyValueFromString("message","[EX4]\n◆阿尔卡特皮肤出现\n◆BOSS血量翻倍\n◆NPC获得血量buff\n◆僵尸初始神器4个\n◆特殊天气");
+	extext.__KeyValueFromString("message","[EX4]\n◆阿尔卡特皮肤出现\n◆BOSS血量翻倍\n◆BOSS出现美杜莎\n◆NPC获得血量buff\n◆僵尸初始神器4个\n◆特殊天气");
 	EntFireByHandle(extext,"Display","",0.01,activator,extext);
 	EntFireByHandle(extext,"Kill","",10,extext,extext);
 	EntFire("event_case_s4", "addoutput", "oncase09 boss_addhp_counter:SetValue:60:1:1", 1, null);
+	EntFire("event_case_s4", "addoutput", "oncase09 sqmaker:addoutput:entitytemplate s_tr_medusaspawn:0:1", 1, null);
+	EntFire("event_case_s4", "addoutput", "oncase09 sqmaker:addoutput:origin 2291.382568 3181.844238 10400:0.1:1", 1, null);
+	EntFire("event_case_s4", "addoutput", "oncase09 sqmaker:addoutput:angles 0 335 0:0.1:1", 1, null);
+	EntFire("event_case_s4", "addoutput", "oncase09 sqmaker:forcespawn::15:1", 1, null);
+	EntFire("event_case_s4", "addoutput", "oncase09 sqmaker:addoutput:angles 0 330 0:15.5:1", 1, null);
+	EntFire("event_case_s4", "addoutput", "oncase09 sqmaker:forcespawn::16:1", 1, null);
+	EntFire("event_case_s4", "addoutput", "oncase09 sqmaker:addoutput:angles 0 325 0:44.5.5:1", 1, null);
+	EntFire("event_case_s4", "addoutput", "oncase09 sqmaker:forcespawn::45:1", 1, null);
 
 	EntFire("s_alucard_button", "addoutput", "origin -6648.830078 5222.132813 13280", 12, null);
  	
@@ -195,6 +203,7 @@ function think()
 	EntFireByHandle(extext,"Display","",0.01,activator,extext);
 	EntFireByHandle(extext,"Kill","",10,extext,extext);
 	EntFire("event_case_s5", "addoutput", "oncase08 boss_addhp_counter:SetValue:50:1:1", 1, null);
+
 
 	EntFire("weather_relay_fog", "enable", null, 0.5, null);
 	EntFire("weather_relay_fog", "trigger", null, 1, null);
@@ -236,7 +245,7 @@ function think()
     }
 	else
 	{
-	extext.__KeyValueFromString("message","◆通关第六关开启ex二周目\n◆ex模式有以下特点\n◆强化boss与npc血量\n◆增加NPC小怪与陷阱数量\n◆增加人类与僵尸神器数量\n◆增加新陷阱与僵尸神器\n◆特殊天气\n◆第二关及以后开始增加阿尔卡特皮肤\n注意:总回合合计为18时强制结束ex换图");
+	extext.__KeyValueFromString("message","◆通关第六关开启ex二周目\n◆ex模式有以下特点\n◆强化boss与npc血量\n◆增加NPC小怪与陷阱数量\n◆增加人类与僵尸神器数量\n◆增加新陷阱与僵尸神器\n◆特殊天气\n◆第二关及以后开始增加阿尔卡特皮肤\n注意:总回合合计为20时强制结束ex换图");
 	extext.__KeyValueFromFloat("y",0.5);
 	extext.__KeyValueFromString("color","255 255 255");
 	extext.__KeyValueFromFloat("holdtime",5);
@@ -248,7 +257,7 @@ function think()
 function stagecount()
 {
 	countbf++;
-	if(countbf>=18)
+	if(countbf>=20)
 	{
 	local extext = Entities.CreateByClassname("game_text");
 	extext.__KeyValueFromString("targetname","zftext");
@@ -308,7 +317,7 @@ function slash()
 	if(slogra)
 	{
  	EntFire("s_slash_maker", "forcespawn", null,0, null);
- 	EntFireByHandle(self,"runscriptcode","slash()",0.5,activator,activator);
+ 	EntFireByHandle(self,"runscriptcode","slash()",0.4,activator,activator);
    } 
 }
 
