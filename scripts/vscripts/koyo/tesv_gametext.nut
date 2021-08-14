@@ -12,6 +12,10 @@ gtc9 <- 0
 gtc10 <- 0
 gtc11 <- 0
 gtc12 <- 0
+gtc13 <- 0
+gtc14 <- 0
+gtc15 <- 0
+gtc16 <- 0
 pb <- Entities.FindByName(null, "archmage_phbox")
 pb2 <- Entities.FindByName(null, "mg_phbox")
 pb3 <- Entities.FindByName(null, "dr_phys")
@@ -163,7 +167,7 @@ function jinengjieshao(pifu)
 	}
 	if(pifu=="dp"||pifu==2)
 	{
-	jntext.__KeyValueFromString("message","|被动:\n中幅度降低中等范围人类速度\n并且秒杀自身小范围内的人类\n\n|右键:[1次]\n定身特大范围人类并在延迟4秒后秒杀");      
+	jntext.__KeyValueFromString("message","|被动:*\n中幅度降低中等范围人类速度\n并且秒杀自身小范围内的人类\n\n|右键:[1次]\n定身特大范围人类并在延迟4秒后秒杀");      
 	EntFireByHandle(jntext,"Display","",0.01,activator,jntext);
 	EntFireByHandle(jntext,"Kill","",15,jntext,jntext);
 	}
@@ -227,6 +231,19 @@ function jinengjieshao(pifu)
 	EntFireByHandle(jntext,"Display","",0.01,activator,jntext);
 	EntFireByHandle(jntext,"Kill","",15,jntext,jntext);
 	}
+	if(pifu=="ww"||pifu==13)
+	{
+	jntext.__KeyValueFromString("message","皮肤血量:7500\n\n|左键:\n对前方小范围造成75伤害\n\n|右键:\n自身3秒内小等范围内小幅度减速人类3秒\nCD:25秒");      
+	EntFireByHandle(jntext,"Display","",0.01,activator,jntext);
+	EntFireByHandle(jntext,"Kill","",15,jntext,jntext);
+	}
+	if(pifu=="troll"||pifu==14)
+	{
+	jntext.__KeyValueFromString("message","皮肤血量:10000\n\n|左键:\n对前方小范围造成150伤害\n\n|右键:\n恢复自身1500皮肤血量\n并使自身中等范围内回复僵尸血量至10000持续两秒\nCD:35秒");      
+	EntFireByHandle(jntext,"Display","",0.01,activator,jntext);
+	EntFireByHandle(jntext,"Kill","",15,jntext,jntext);
+	}
 
 }
+
 
