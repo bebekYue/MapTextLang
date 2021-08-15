@@ -167,7 +167,7 @@ function jinengjieshao(pifu)
 	}
 	if(pifu=="dp"||pifu==2)
 	{
-	jntext.__KeyValueFromString("message","|被动:*\n中幅度降低中等范围人类速度\n并且秒杀自身小范围内的人类\n\n|右键:[1次]\n定身特大范围人类并在延迟4秒后秒杀");      
+	jntext.__KeyValueFromString("message","|被动:*\n免疫人类枪械击退\n中幅度降低自身中等范围人类速度\n并且秒杀自身小范围内的人类\n\n|右键:[1次]\n定身特大范围人类并在延迟4秒后秒杀");      
 	EntFireByHandle(jntext,"Display","",0.01,activator,jntext);
 	EntFireByHandle(jntext,"Kill","",15,jntext,jntext);
 	}
@@ -185,19 +185,19 @@ function jinengjieshao(pifu)
 	}
 	if(pifu=="xiaofa"||pifu==5)
 	{
-	jntext.__KeyValueFromString("message","|左键:燃烧火球\n对前方直线范围造成375伤害(至多造成1500伤害)\n\n|右键:治愈魔法\n自身小范围每0.5秒恢复150HP持续4秒");      
+	jntext.__KeyValueFromString("message","|左键:燃烧火球\n发射一枚火球对对前方直线范围造成375伤害(至多造成1500伤害)\n\n|右键:治愈魔法\n自身小范围每0.5秒恢复150HP持续4秒");      
 	EntFireByHandle(jntext,"Display","",0.01,activator,jntext);
 	EntFireByHandle(jntext,"Kill","",15,jntext,jntext);
 	}
 	if(pifu=="dc"||pifu==6)
 	{
-	jntext.__KeyValueFromString("message","|左键:前方小范围挥砍\n造成500伤害并轻微击退\n\n|右键:[2次]\n固定自身5秒并释放以自身为中心大范围破坏魔法\n造成20000伤害");      
+	jntext.__KeyValueFromString("message","|左键:前方小范围挥砍\n造成500伤害并轻微击退\n\n|右键:[2次]\n定身自身5秒咏唱后释放以自身为中心大范围破坏魔法\n造成20000伤害");      
 	EntFireByHandle(jntext,"Display","",0.01,activator,jntext);
 	EntFireByHandle(jntext,"Kill","",15,jntext,jntext);
 	}
 	if(pifu=="dafa"||pifu==7)
 	{
-	jntext.__KeyValueFromString("message","|左键:击退光束\n轻微击退前方直线范围内敌人\n\n|右键:焚烧热浪\n固定自身6秒并向前方长直线释放火魔法\n造成中等幅度减速与450伤害持续6秒(至多造成约6000伤害)");      
+	jntext.__KeyValueFromString("message","|左键:击退光束\n发射轻微击退前方直线范围内敌人的激光\n\n|右键:焚烧热浪\n固定自身6秒并向前方长直线释放火魔法\n造成中等幅度减速与450伤害持续6秒(至多造成约6000伤害)");      
 	EntFireByHandle(jntext,"Display","",0.01,activator,jntext);
 	EntFireByHandle(jntext,"Kill","",15,jntext,jntext);
 	}
@@ -221,25 +221,25 @@ function jinengjieshao(pifu)
 	}
 	if(pifu=="nz"||pifu==10)
 	{
-	jntext.__KeyValueFromString("message","|E键:治疗权杖\n释放持续4秒的自身小范围每0.5秒恢复150HP的魔法");      
+	jntext.__KeyValueFromString("message","|E键:治疗权杖\n释放跟随自身的治疗魔法\n每秒恢复300hp持续4秒");      
 	EntFireByHandle(jntext,"Display","",0.01,activator,jntext);
 	EntFireByHandle(jntext,"Kill","",15,jntext,jntext);
 	}
 	if(pifu=="jz"||pifu==12)
 	{
-	jntext.__KeyValueFromString("message","|上古卷轴:\n使用后能对奥杜因造成巨额伤害(1600)\n似乎需要在提示出现后使用才有效");      
+	jntext.__KeyValueFromString("message","|上古卷轴:\n使用后能对奥杜因造成巨额伤害(1600)\n需要在左下角使用提示出现后使用才有效");      
 	EntFireByHandle(jntext,"Display","",0.01,activator,jntext);
 	EntFireByHandle(jntext,"Kill","",15,jntext,jntext);
 	}
 	if(pifu=="ww"||pifu==13)
 	{
-	jntext.__KeyValueFromString("message","皮肤血量:7500\n\n|左键:\n对前方小范围造成75伤害\n\n|右键:\n自身3秒内小等范围内小幅度减速人类3秒\nCD:25秒");      
+	jntext.__KeyValueFromString("message","皮肤血量:7500\n\n|左键:\n对前方小范围造成75伤害\n\n|右键:\n自身3秒内小范围内小幅度减速人类3秒\nCD:25秒");      
 	EntFireByHandle(jntext,"Display","",0.01,activator,jntext);
 	EntFireByHandle(jntext,"Kill","",15,jntext,jntext);
 	}
 	if(pifu=="troll"||pifu==14)
 	{
-	jntext.__KeyValueFromString("message","皮肤血量:10000\n\n|左键:\n对前方小范围造成150伤害\n\n|右键:\n恢复自身1500皮肤血量\n并使自身中等范围内回复僵尸血量至10000持续两秒\nCD:35秒");      
+	jntext.__KeyValueFromString("message","皮肤血量:10000\n\n|左键:\n对前方小范围造成150伤害\n\n|右键:\n恢复自身1500皮肤血量\n并使自身中等范围内僵尸血量恢复至10000持续两秒\nCD:35秒");      
 	EntFireByHandle(jntext,"Display","",0.01,activator,jntext);
 	EntFireByHandle(jntext,"Kill","",15,jntext,jntext);
 	}
