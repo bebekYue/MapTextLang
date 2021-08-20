@@ -382,12 +382,12 @@ function TickHead()
 		EntFire("fb_sound_5","Volume","0",0.00,null);
 		EntFire("fb_sound_timer","Enable","",10.00,null);
 		EntFire("fb_body","Setanimation","crawl",0.00,null);
-		EntFire("fb_head","Setanimation","hurt",0.00,null);
-		EntFire("fb_head","Setanimation","hurt",3.00,null);
-		EntFire("fb_head","Setanimation","hurt",7.00,null);
-		EntFire("fb_head","Setanimation","hurt",10.00,null);
-		EntFire("fb_head","SetDefaultanimation","freak",4.02,null);
-		EntFire("fb_body","SetDefaultanimation","rage_crawl",0.02,null);
+		EntFire("fb_head","Setanimation","idel1",0.00,null);
+		EntFire("fb_head","Setanimation","idel2",3.00,null);
+		EntFire("fb_head","Setanimation","idel3",7.00,null);
+		EntFire("fb_head","Setanimation","idel4",10.00,null);
+		EntFire("fb_head","SetDefaultanimation","iedl5",4.02,null);
+		EntFire("fb_body","SetDefaultanimation","crawl",0.02,null);
 		EntFire("i_npc_tf_1","AddOutput","force 2500",0.00,null);
 		EntFire("i_npc_tf_1","Deactivate","",0.05,null);
 		EntFire("i_npc_ts_1","Deactivate","",0.05,null);
