@@ -381,7 +381,7 @@ function TickHead()
 		EntFire("fb_sound_4","Volume","0",0.00,null);
 		EntFire("fb_sound_5","Volume","0",0.00,null);
 		EntFire("fb_sound_timer","Enable","",10.00,null);
-		EntFire("fb_body","Setanimation","facial1",0.00,null);
+		EntFire("fb_body","Setanimation","crawl",0.00,null);
 		EntFire("fb_head","Setanimation","idel1",0.00,null);
 		EntFire("fb_head","Setanimation","idel2",3.00,null);
 		EntFire("fb_head","Setanimation","idel3",7.00,null);
