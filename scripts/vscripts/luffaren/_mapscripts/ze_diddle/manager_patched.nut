@@ -731,12 +731,12 @@ function CheckAutoSlay(stageind)
 			{
 				EntFire("server","Command","say ***没有足够的人类存活，处死僵尸 ***",0.00,null);
 				EntFire("server","Command","say ***秋刀鱼小提示*** 处死条件：人类数量低于比例（人类/僵尸）",0.01,null);
-				EntFire("server","Command","say ***史莱克 7/5 ***",0.02,null);
-				EntFire("server","Command","say ***海龟 1/1 ***",0.03,null);
-				EntFire("server","Command","say ***抢滩 5/7 ***",0.04,null);
-				EntFire("server","Command","say ***地鼠 2/1 ***",0.05,null);
-				EntFire("server","Command","say ***樱花 1/2 ***",0.06,null);
-				EntFire("server","Command","say ***最终关 2/1 ***",0.07,null);
+				EntFire("server","Command","say ***史莱克 七比五 ***",0.02,null);
+				EntFire("server","Command","say ***海龟 一比一 ***",0.03,null);
+				EntFire("server","Command","say ***抢滩 五比七 ***",0.04,null);
+				EntFire("server","Command","say ***地鼠 二比一 ***",0.05,null);
+				EntFire("server","Command","say ***樱花 一比二 ***",0.06,null);
+				EntFire("server","Command","say ***最终关 二比一 ***",0.07,null);
 				KillAllT();
 			}
 		}
