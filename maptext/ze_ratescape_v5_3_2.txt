@@ -1,26 +1,26 @@
 "Console_T"
 {
-"**Survive 25 seconds!** "
+"**Survive 25 seconds!**"
 	{
 		"chi"		"**生存25秒**"
 	}
-"**Survive 50 seconds!** "
+"**Survive 50 seconds!**"
 	{
 		"chi"		"**生存50秒**"
 	}
-"**Survive 100 seconds!** "
+"**Survive 100 seconds!**"
 	{
 		"chi"		"**生存100秒**"
 	}
-"**Survive 200 seconds!** "
+"**Survive 200 seconds!**"
 	{
 		"chi"		"**生存200秒**"
 	}
-"**You beat the map, congratulations! Now try survive 275 seconds in Lego City!** "
+"**You beat the map, congratulations! Now try survive 275 seconds in Lego City!**"
 	{
 		"chi"		"**全图通关,恭喜！现在在乐高世界里生存275秒吧**"
 	}
-"**You beat the map, congratulations! Now try survive 230 seconds in Lego City!** "
+"**You beat the map, congratulations! Now try survive 230 seconds in Lego City!**"
 	{
 		"chi"		"**全图通关,恭喜！现在在乐高世界里生存230秒吧**"
 	}
@@ -187,21 +187,21 @@
 	}
 "**MLG Duck summons Doritos Rainbow**"
 	{
-		"chi"		"**大黄鸭召唤了彩虹多力多滋**"
+		"chi"		"**大黄鸭召唤了彩虹多力多滋(蹲下)**"
 	}
 "**MLG Duck summons Doritos Flames**"
 	{
-		"chi"		"**大黄鸭召唤了火焰多力多滋**"
+		"chi"		"**大黄鸭召唤了火焰多力多滋(去两边)**"
 	}
 "**MLG Duck summons Doritos Blaze*"
 	{
-		"chi"		"**大黄鸭召唤了火焰多力多滋**"
+		"chi"		"**大黄鸭召唤了烈焰多力多滋**"
 	}
 "**MLG Duck summons Doritos Mtn*"
 	{
 		"chi"		"**大黄鸭召唤了激浪多力多滋**"
 	}
-"**The door from the apartment will open in 35 seconds!** "
+"**The door from the apartment will open in 35 seconds!**"
 	{
 		"chi"		"**大门将在35秒后打开**"
 	}
@@ -213,7 +213,7 @@
 	{
 		"chi"		"**这是怎么回事...我们的全部单位都被纸王的部队击倒了!**"
 	}
-"**Hold this area until we come up with a new evacuation plan!** "
+"**Hold this area until we come up with a new evacuation plan!**"
 	{
 		"chi"		"**坚守直至我们思考出一个新的计划!---20**"
 	}
@@ -225,7 +225,7 @@
 	{
 		"chi"		"**屋顶大门将在30秒后打开!**"
 	}
-"**Zombies takes control on roof, we are lost, mission failed, repeat mission failed!** "
+"**Zombies takes control on roof, we are lost, mission failed, repeat mission failed!**"
 	{
 		"chi"		"**僵尸控制了屋顶,我们失败了,任务失败,再说一遍,任务失败!**"
 	}
@@ -370,7 +370,7 @@
 	{
 		"chi"		"**做得好,我们靠近了主反应炉的控制板!**"
 	}
-"**Well done! Now find way to get out of here, Chopper is ready to fly!** "
+"**Well done! Now find way to get out of here, Chopper is ready to fly!**"
 	{
 		"chi"		"**做得好!现在找一条路离开这里,飞行员已经准备起飞了!**"
 	}
@@ -442,25 +442,26 @@
 	{
 		"chi"		"**MLG鸭子已被击败**"
 	}
-"**[Chopper] We got information that shelves without MLG Ducks will start to fall apart!** "
+"**[Chopper] We got information that shelves without MLG Ducks will start to fall apart!**"
 	{
 		"chi"		"**[飞行员] 我们得到信息,没有了MGL鸭子,书架将会崩塌!**"
 	}
-"**[Chopper]  Better get out of there! Now!** "
+"**[Chopper]  Better get out of there! Now!**"
 	{
 		"chi"		"**[飞行员] 因此快点离开这里!**"
 	}
-"**[Chopper]  Find a good pick-up point, or else you'll be buried along with the shelves!** "
+"**[Chopper]  Find a good pick-up point, or else you'll be buried along with the shelves!**"
 	{
 		"chi"		"**[飞行员] 寻找一个合适的上机点,否则你们只能和书架埋葬在一起!**"
 	}
 "**MLG Duck is using Mountain Dew Shower!**"
 	{
-		"chi"		"**大黄鸭使用了激浪澡!**"
+		"chi"		"**大黄鸭使用了激浪冲击(左右侧推)!**"
 	}
 "**MLG Duck opens a pack of crips! Duck has healed 185  hp**"
 	{
 		"chi"		"**大黄鸭打开了一袋薯片!恢复了185血量**"
+		"DoorCountdown"		"-1"
 	}
 "**MLG Duck has casted MLG Stuff!**"
 	{
@@ -492,11 +493,11 @@
 	}
 "**MLG Duck launched Tactical Nuke, Its over!**"
 	{
-		"chi"		"**大黄鸭释放了终极,结束了!**"
+		"chi"		"**大黄鸭释放了终极,结束了（1秒时往下跳)!**"
 	}
 "**MLG Duck summons Pringles daddy!**"
 	{
-		"chi"		"**大黄鸭召唤了品客!**"
+		"chi"		"**大黄鸭召唤了品客(去两边)!**"
 	}
 "**Reinforced concrete, through which we will not break through now**"
 	{
@@ -561,6 +562,7 @@
 "**Map Status: Stripper #1 enable!**"
 	{
 		"chi"		"**地图状态: #1 Stripper!**"
+		"DoorCountdown"		"-1"
 	}	
 "**Wait, where is Paper King!?**"
 	{
