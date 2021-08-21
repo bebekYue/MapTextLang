@@ -51,6 +51,7 @@
 "**Secret Weapon #4 has been unlock!"
 	{
 		"chi"		"**4号秘密武器已解锁!**"
+		"DoorCountdown"		"-1"
 	}
 "**zombies escaped, abort the mission, I repeat, abort the mission, we lost!**"
 	{
@@ -63,6 +64,7 @@
 "**Secret Weapon #3 has been unlock! Visit Ammu-Nation and take your reward!**"
 	{
 		"chi"		"**3号秘密武器已解锁!前往枪店领取奖励!**"
+		"DoorCountdown"		"-1"
 	}
 "**A player has picked up Tatical Nuke!**"
 	{
@@ -79,10 +81,12 @@
 "**Secret Weapon #2 has been unlock! Visit GGEASY.PL garage to take your reward!**"
 	{
 		"chi"		"**2号秘密武器已解锁!前往GGEASY.PL车库领取奖励!**"
+		"DoorCountdown"		"-1"
 	}
 "**Secret Weapon #1 has been unlock! Visit GGEASY.PL garage to take your reward!**"
 	{
 		"chi"		"**1号秘密武器已解锁!前往GGEASY.PL车库领取奖励!**"
+		"DoorCountdown"		"-1"
 	}
 "**A player has picked up Serious Bomb!**"
 	{
@@ -127,6 +131,7 @@
 "**[Chopper] Well done! We flying to zone 0, get ready!**"
 	{
 		"chi"		"**[飞行员] 干得漂亮!我们即将飞往区域0,准备好!**"
+		"DoorCountdown"		"-1"
 	}
 "**[Chopper] Running out of fuel, either we'll leave in 20 seconds or you'll stay here!**"
 	{
@@ -343,6 +348,7 @@
 "**[CHOPPER] We're flying into zone 0, we can't stay there too long, hurry up!**"
 	{
 		"chi"		"**[飞行员] 我们即将飞往区域0,我们不能在这呆太久,快点!**"
+		"DoorCountdown"		"-1"
 	}
 "**Gates will open in 20 seconds!**"
 	{
