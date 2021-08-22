@@ -2625,10 +2625,9 @@ function AddItemLevelAllAliveHum()
 	local apl = null;
 	while(null != (apl = Entities.FindByClassname(apl, "player")))
 	{
-		if(apl.GetTeam() == 3 && apl.GetHealth() > 0 && apl.GetName() == "player_s" || 
-		apl.GetTeam() == 3 && apl.GetHealth() > 0 && apl.GetName() == "harrypotter")
+		if(apl.GetTeam() == 3 && apl.GetHealth() > 0)
 		{
-            EntFire("!activator", "RunScriptCode", "AddLevel();", 0.00, apl);
+            		EntFire("!activator", "RunScriptCode", "AddLevel();", 0.00, apl);
 		}
 	}
 }
@@ -2638,10 +2637,9 @@ function AddItemLevelAllAlivePlayer()
 	local alapl = null;
 	while(null != (alapl = Entities.FindByClassname(alapl, "player")))
 	{
-		if(alapl.GetHealth() > 0 && alapl.GetName() == "player_s" || 
-		alapl.GetHealth() > 0 && alapl.GetName() == "harrypotter")
+		if(alapl.GetHealth() > 0)
 		{
-            EntFire("!activator", "RunScriptCode", "AddLevel();", 0.00, alapl);
+            		EntFire("!activator", "RunScriptCode", "AddLevel();", 0.00, alapl);
 		}
 	}
 }
