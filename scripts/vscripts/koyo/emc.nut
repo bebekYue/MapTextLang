@@ -135,12 +135,14 @@ function falldmg()
 
 function dmgft()
 {
+	EntFire("hurt_all", "addoutput", "damage 99999", 0, null);
 	pl <- null;
 	while(null != (pl = Entities.FindByClassname(pl, "player")))
 {
 	if(pl.GetTeam() == 3)
 	{
-			EntFireByHandle(pl, "setdamagefilter", "fallfilter", 0.0, null, null);
+			EntFireByHandle(pl, "addoutput", "max_health 9999999", 0.0, null, null);
+			EntFireByHandle(pl, "sethealth", "9999999", 0.1, null, null);
 	}
 }
 }
