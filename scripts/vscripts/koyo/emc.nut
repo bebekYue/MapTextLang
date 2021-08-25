@@ -1,3 +1,11 @@
+gt <- Entities.FindByName(null, "bmcd")
+cd <- 0
+cd2 <- 5
+cd3 <- 55
+kg <- Entities.FindByName(null, "boss_phys_spider")
+times <- 10
+cannon1<-0
+cannon2<-0
 
 catext <- Entities.CreateByClassname("game_text");
 catext.__KeyValueFromString("targetname","catext");
