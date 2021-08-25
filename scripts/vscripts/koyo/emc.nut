@@ -1,12 +1,3 @@
-gt <- Entities.FindByName(null, "bmcd")
-cd <- 0
-cd2 <- 5
-cd3 <- 55
-kg <- Entities.FindByName(null, "boss_phys_spider")
-times <- 10
-cannon1<-0
-cannon2<-0
-
 
 catext <- Entities.CreateByClassname("game_text");
 catext.__KeyValueFromString("targetname","catext");
@@ -20,7 +11,7 @@ catext.__KeyValueFromFloat("fxtime",0);
 catext.__KeyValueFromInt("spawnflags",1);
 catext.__KeyValueFromInt("channel",5);
 catext.__KeyValueFromInt("effect",2);
-catext.__KeyValueFromString("message","┏━━━━━━━┓\n┃   "+cannon1+"     ┃     "+cannon2+"   ┃\n┗━━━━━━━┛\n       [船舱大炮]");
+catext.__KeyValueFromString("message","script by koyo");
 
 pl <- null;
 function refresh()
@@ -40,9 +31,23 @@ function refresh()
   EntFireByHandle(self,"runscriptcode","refresh()",1,null,null);
 }
 
+jsc<-0
+kgjsc<-false
+function jschuan(num)
+{
+	if(kgjsc)
+	{
+
+	jsc=jsc-num
+	}
+}
 function cannoncd()
 {
-	
+	if(jsc<0)
+	{
+		jsc=0;
+		kgjsc=false
+	}
 	if(cannon1!=0)
 	{
 	cannon1--; 						
@@ -51,7 +56,7 @@ function cannoncd()
 	{
 	cannon2--; 							
 	}
-	catext.__KeyValueFromString("message","┏━━━━━━━┓\n┃   "+cannon1+"     ┃     "+cannon2+"   ┃\n┗━━━━━━━┛\n       [船舱大炮]");
+	catext.__KeyValueFromString("message"," ┏━━━━━━━┓\n     僵尸船HP:"+jsc+"     \n ┗━━━━━━━┛\n ┏━━━━━━━┓\n<    "+cannon1+"     ┃     "+cannon2+"     >\n ┗━━━━━━━┛\n     [船舱大炮冷却]");
 	EntFireByHandle(catext,"Display","",0.01,activator,catext);
 	EntFireByHandle(self, "runscriptcode", "cannoncd()", 1, null, null);
 }
@@ -69,6 +74,8 @@ setext.__KeyValueFromInt("spawnflags",1);
 setext.__KeyValueFromInt("channel",3);
 setext.__KeyValueFromInt("effect",2);
 setext.__KeyValueFromString("message","*标记闪烁处为 触手打击船体方位");
+
+
 
 function seam(num)
 {
@@ -97,6 +104,7 @@ EntFireByHandle(self, "runscriptcode", "diseam()", 0.5, null, null);
 }
 
 
+
 function triggercannon()
 {
 	local ca1 = null;
@@ -118,10 +126,9 @@ function speedalucard()
 
 
 
-
-
 function falldmg()
 {
+
 	pl <- null;
 	while(null != (pl = Entities.FindByClassname(pl, "player")))
 {
@@ -196,7 +203,10 @@ function countdown2()
 
 function wb()
 {
-	ScriptPrintMessageChatAll(" \x02  弱点打击状态:神器与高爆此时能对BOSS造成大量伤害与硬直:持续10秒 (此状态随机出现)");
+	ScriptPrintMessageChatAll("弱点打击状态:神器与高爆此时能对BOSS造成大量伤害与硬直:持续10秒 (此状态随机出现)");
+	setext.__KeyValueFromString("message","*弱点打击状态:\n神器与高爆此时能对BOSS\n造成大量伤害与硬直\n持续10秒 (此状态随机出现)");
+	setext.__KeyValueFromString("color","205 200 250");
+	EntFireByHandle(setext,"Display","",0,activator,setext);
 
 }
 
