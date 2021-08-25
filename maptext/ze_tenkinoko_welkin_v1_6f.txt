@@ -490,6 +490,7 @@
 	"<<< Tips:Recharge item each have 60 energy,which restore 1 energy per second when not in use >>>"
 	{
 		"chi"		">>>小提示：充能类神器拥有60点能量，未使用的情况下每秒回复1点能量<<<"
+		"DoorCountdown"		"-1"
 	}
 	"<<< Tips:When the energy is exhausted or the user uses the upper part, the recharg items effect  will be invalid >>>"
 	{
@@ -498,14 +499,17 @@
 	"<<< Tips:Human item 65 seconds CD, recharge item 5 seconds CD, zombie item 70 seconds CD, weather item 80 seconds CD >>>"
 	{
 		"chi"		">>>人类神器拥有65秒的CD，充能类神器拥有5秒CD，僵尸神器拥有70秒CD，天气类神器拥有80秒神器<<<"
+		"DoorCountdown"		"-1"
 	}
 	"<<< Tips:The effect will disappear 4 seconds after FrozenTombs crystal is crushed >>>"
 	{
 		"chi"		">>>小提示：冰封陵墓的冰冻效果会在水晶被摧毁后4秒消失<<<"
+		"DoorCountdown"		"-1"
 	}
 	"<<< Tips:FrozenTomb will freeze the zombies around for 9 seconds when uses the upper part >>>"
 	{
 		"chi"		">>>小提示：冰封陵墓对头顶按E将会冰冻僵尸9秒钟<<<"
+		"DoorCountdown"		"-1"
 	}
 	"<<< Tips:Both SunnyDoll and Rainbow can heal humans, Rainbow will also provide ammunition supplies >>>"
 	{
@@ -514,6 +518,7 @@
 	"<<< Tips:Blizzard will form a storm after 5 seconds, freezing the zombies in the range >>>"
 	{
 		"chi"		">>>小提示：暴风雪将会在5秒后形成一个冰冻僵尸的区域<<<"
+		"DoorCountdown"		"-1"
 	}
 	"<<< Tips:Mist is poisonous, especially in the last 5 seconds >>>"
 	{
