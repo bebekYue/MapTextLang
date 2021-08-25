@@ -20,7 +20,7 @@ function think()
 	extext.__KeyValueFromInt("channel",3);
 	extext.__KeyValueFromInt("effect",2);
 	EntFireByHandle(self,"runscriptcode","stagecount()",101,activator,activator);
-	ScriptPrintMessageChatAll(" \x10 --------- EX stripper 日期 2021.8.12 编写: koyo 回合计数:"+countbf+"---------");
+	ScriptPrintMessageChatAll(" \x10 --------- EX stripper 更新日期 2021.8.25 编写: koyo 回合计数:"+countbf+"---------");
 	if(ex)
 	{
 	EntFire("skybox_s1_monster", "addoutput", "rendercolor 255 80 80", 11, null);
@@ -59,7 +59,7 @@ function think()
 	switch(RandomInt(0, 1))
 	{case 0:EntFire("weather_case", "invalue", 6, 1, null);break;
 	case 1:EntFire("weather_case", "invalue", 12, 1, null);break;}
-	EntFire("g_hitdetect_math", "SetValue", 600, 32.5, null);
+	
 	EntFire("boss_addhp_counter", "SetValue", 10, 1.5, null);
 	EntFire("s_stonelaunch", "addoutput", "origin -14456 14480 14500", 2, null);
 	EntFireByHandle(self,"runscriptcode","spawnys()",35,activator,activator);
@@ -72,8 +72,13 @@ function think()
 	EntFire("s_ghost", "addoutput", "origin -14484 14919 14655", 32.5, null);
 	EntFire("s_ghost", "forcespawn", "", 33, null);
 
-	EntFire("event_case_s1", "addoutput", "oncase02 g_hitdetect_math:SetValue:600:17.5:-1", 1, null);
- 	EntFire("event_case_s1", "addoutput", "oncase03 g_hitdetect_math:SetValue:600:17.5:-1", 1, null);
+
+	EntFire("emcscript", "runscriptcode", "jsc=600", 32.1, null);
+	EntFire("g_hitdetect_math", "SetValue", 600, 32.1, null);
+	EntFire("event_case_s1", "addoutput", "oncase02 g_hitdetect_math:SetValue:600:17.1:-1", 1, null);
+ 	EntFire("event_case_s1", "addoutput", "oncase03 g_hitdetect_math:SetValue:600:17.1:-1", 1, null);
+ 	EntFire("event_case_s1", "addoutput", "oncase02 emcscript:runscriptcode:jsc=600:17.1:-1", 1, null);
+ 	EntFire("event_case_s1", "addoutput", "oncase03 emcscript:runscriptcode:jsc=600:17.1:-1", 1, null);
 
  	EntFire("event_case_s1", "addoutput", "oncase02 stage_1:runscriptcode:yunshi=false:0:-1", 1, null);
  	EntFire("event_case_s1", "addoutput", "oncase02 stage_1:runscriptcode:yunshi=true:20:-1", 1, null);
