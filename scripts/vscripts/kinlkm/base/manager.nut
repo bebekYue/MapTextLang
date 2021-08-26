@@ -1,4 +1,3 @@
-
 DEBUG <- false;
 ::PLAYERS <- [];
 PL_HANDLE <- [];
@@ -258,7 +257,46 @@ function GetPlayerClassByUserID(uid)
 }
 
 
-function HealthChanged()
+function HealthChanged(n)
 {
-    ScriptPrintMessageChatAll(" \x02 [Even事件]：\x09" + GetPlayerClassByHandle(activator).name + "尝试攻击障碍物");
+    local player_name = null;
+    local type_name = null;
+    switch(n)
+    {
+        case 0:
+        {
+            type_name = "箱子";
+            break;
+        }
+        default:
+        {
+            type_name = "障碍物";
+        }
+    }
+    if(activator.GetTeam() == 3)
+    {
+        player_name = GetPlayerClassByHandle(activator).name;
+        ScriptPrintMessageChatTeam(3," \x02 [Even事件]：\x09" + player_name + "尝试攻击" + type_name);
+    }
+}
+
+function Break(n)
+{
+    local player_name = null;
+    local type_name = null;
+    switch(n)
+    {
+        case 0:
+        {
+            type_name = "箱子";
+            break;
+        }
+        default:
+        {
+            type_name = "障碍物";
+        }
+    }
+
+    player_name = GetPlayerClassByHandle(activator).name;
+    ScriptPrintMessageChatAll(" \x02 [Even事件]：\x09" + player_name + "破坏了" + type_name);
 }
