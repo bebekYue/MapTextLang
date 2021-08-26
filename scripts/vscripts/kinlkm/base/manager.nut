@@ -97,6 +97,10 @@ function PlayerConnect()
 
 function EventInfo()
 {
+    if(eventinfo == null || eventinfo != null && !eventinfo.IsValid())
+    {
+        eventinfo = Entities.FindByName(null, "eventinfo");
+    }
 	local userid = eventinfo.GetScriptScope().event_data.userid;
     if(PLAYERS.len() > 0)
     {
@@ -297,6 +301,6 @@ function Break(n)
         }
     }
 
-    player_name = GetPlayerClassByHandle(activator).name;
-    ScriptPrintMessageChatAll(" \x02 [Even事件]：\x09" + player_name + "破坏了" + type_name);
+    player_name = GetPlayerClassByHandle(activator).userid;
+    ScriptPrintMessageChatAll(" \x02 [Even事件]：\x09 UID:" + player_name + "破坏了" + type_name + " 控制台输入status查询");
 }
