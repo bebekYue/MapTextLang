@@ -523,6 +523,7 @@
 	"<<< Tips:Mist is poisonous, especially in the last 5 seconds >>>"
 	{
 		"chi"		">>>小提示：迷雾球会引起中毒，尤其是最后5秒的时候<<<"
+		"DoorCountdown"		"-1"
 	}
 	"<<< Tips:Weather items will only appear under certain circumstances and will lead to different endings. >>>"
 	{
