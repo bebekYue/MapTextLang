@@ -38,11 +38,11 @@
 	}
 	"** We need to resist! The park's door will open in 20 seconds! **"
 	{
-		"chi"		"** **"
+		"chi"		"**公园的门将在20秒后打开**"
 	}
 	"** RESIST! Last 5 seconds! **"
 	{
-		"chi"		"** **"
+		"chi"		"**最后5秒！**"
 	}
 	"* [[ NYCRockRadio FM 81.2 :: Buffalo - Shylock ]] *"
 	{
@@ -50,7 +50,7 @@
 	}
 	"** Hold the broken wall! The door will open in 25 seconds! **"
 	{
-		"chi"		"** **"
+		"chi"		"**门将在25秒后打开**"
 	}
 	"** Resist! 10 more seconds! **"
 	{
@@ -62,11 +62,11 @@
 	}
 	"** THE CHECKPOINT HAS BEEN ENABLED! **"
 	{
-		"chi"		"** **"
+		"chi"		"**僵尸传送点被启用了**"
 	}
 	"** AFK AND SLOW WOBBLES WILL BE TELEPORTED TO IT IN 20 SECONDS. **"
 	{
-		"chi"		"** **"
+		"chi"		"**挂机玩家将在20秒后被传送**"
 	}
 	"** Oh noes! The tunnel is locked! We'll have to hold a bit (30s) **"
 	{
