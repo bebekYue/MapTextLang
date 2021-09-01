@@ -62,11 +62,11 @@
 	}
 	"** THE CHECKPOINT HAS BEEN ENABLED! **"
 	{
-		"chi"		"**检查点被启用了**"
+		"chi"		"**僵尸传送点点被启用了**"
 	}
 	"** AFK AND SLOW WOBBLES WILL BE TELEPORTED TO IT IN 20 SECONDS. **"
 	{
-		"chi"		"**AFK将在20秒后被传送**"
+		"chi"		"**挂机玩家将在20秒后被传送**"
 	}
 	"** Oh noes! The tunnel is locked! We'll have to hold a bit (30s) **"
 	{
