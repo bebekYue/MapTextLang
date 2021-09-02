@@ -90,15 +90,11 @@
 	}
 	"<<SOME FOKER BLEW UP THE BRIDGE  AND GOT REKT>>"
 	{
-		"chi"		"**炸毁了桥，并且桥被破坏了**"
+		"chi"		"**看起来有人炸毁了桥**"
 	}
 	"<<EMERGENCY PATH IS OPENING SOON , FIND A LEVER>>"
 	{
 		"chi"		"**紧急道路将在不久后打开，寻找一个拉杆**"
-	}
-	"sync_version"
-	{
-		"syncvalue"		"2986"
 	}
 	"<<LOOKS LIKE WE NEED TO FIND A LEVER, DONT LET ZOMBIES FIND IT FIRST>>"
 	{
