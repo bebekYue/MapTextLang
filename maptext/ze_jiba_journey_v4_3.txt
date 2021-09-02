@@ -70,7 +70,7 @@
 	}
 	"<< PULL DOWN 4 LEVERS TO ACTIVATE JIBA NUKE>>"
 	{
-		"chi"		"**拉下4个拉杆来激活羁绊核弹**"
+		"chi"		"**拉下四个拉杆来激活羁绊核弹**"
 	}
 	"<< DONT LET ZOMBIES GET OUT OF ELEVATOR AREA>>"
 	{
@@ -86,11 +86,11 @@
 	}
 	"<<LOOKS LIKE THE BRIDGE IS MINED , FIND A LEVER TO DEACTIVATE BOMB >>"
 	{
-		"chi"		"**看起来桥被开采过了，寻找拉杆去关闭炸弹**"
+		"chi"		"**看起来桥被开采过了，寻找拉杆去关闭炸弹（请在炸弹被拆除后再过桥）**"
 	}
 	"<<SOME FOKER BLEW UP THE BRIDGE  AND GOT REKT>>"
 	{
-		"chi"		"**一些憨批炸毁了桥，并且桥被破坏了**"
+		"chi"		"**炸毁了桥，并且桥被破坏了**"
 	}
 	"<<EMERGENCY PATH IS OPENING SOON , FIND A LEVER>>"
 	{
@@ -114,7 +114,7 @@
 	}
 	"<< PULL DOWN 4 LEVERS TO ACTIVATE JIBA NUKE, DONT LET ZOMBIES TRIGGER IT FIRST>>"
 	{
-		"chi"		"**拉下4个拉杆来激活羁绊核弹，不要让僵尸先激活它**"
+		"chi"		"**拉下四个拉杆来激活羁绊核弹，不要让僵尸先激活它**"
 	}
 	"<<JIBA NUKE INCOMING IN 30 SEC>>"
 	{
@@ -178,7 +178,7 @@
 	}
 	"<<PULL 2 LEVERS TO OPEN THE GATE>>"
 	{
-		"chi"		"**拉下2个拉杆来打开大门**"
+		"chi"		"**拉下两个拉杆来打开大门**"
 	}
 	"<< ZOMBIE TP ENABLES IN 15 SEC >>"
 	{
