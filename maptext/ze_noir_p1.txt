@@ -30,7 +30,7 @@
 	}
 	"** We've been exposed for too long to the chemicals in the air... **"
 	{
-		"chi"		"**我们和空气中的化学物质接触太久了**"
+		"chi"		"**我们和空气中的化学物质接触太久了...**"
 	}
 	"** The violent reaction is starting now - we will be no more but dust lost in memory. **"
 	{
@@ -150,7 +150,7 @@
 	}
 	"** Hold the area! We can't let anything through! **"
 	{
-		"chi"		"**守住这里！我们不能让任何东西进来！**"
+		"chi"		"**守住这里！我们不能让僵尸进来！**"
 	}
 	"** Keep it up! There's a bit still to go! **"
 	{
@@ -194,74 +194,74 @@
 	}
 	"** Keep it up! I can hear the doors engine moving through the wall! **"
 	{
-		"chi"		"** **"
+		"chi"		"**守住！我可以穿过墙听到听到门的引擎在移动！**"
 	}
 	"** KEEP IT UP! The doors about to open! **"
 	{
-		"chi"		"** **"
+		"chi"		"**守住！门就要开了**"
 	}
 	"** GO! The doors moving! **"
 	{
-		"chi"		"** **"
+		"chi"		"**走！门开了**"
 	}
 	"** Were going to have to split up here! Well meet up soon - hopefully! **"
 	{
-		"chi"		"** **"
+		"chi"		"**我们将会在这分头行动！希望在不久后可以再次相遇**"
 	}
 	"** Were trapped in here unless we unlock the pneumatic gates! **"
 	{
-		"chi"		"** **"
+		"chi"		"**即使我们解锁了气动大门，但我们还是被困在这了**"
 	}
 	"** WERE LEAVING! HOP IN! **"
 	{
-		"chi"		"** **"
+		"chi"		"**我们可以离开了！跳进去！**"
 	}
 	"** RESIST! The sounds of the city can be heard through this door! Were close! **"
 	{
-		"chi"		"** **"
+		"chi"		"**守住！可以透过墙听到城市的声音！很接近了**"
 	}
 	"** Keep holding! Its about to open! RESIST! **"
 	{
-		"chi"		"** **"
+		"chi"		"**守住！门就要开了！守住**"
 	}
 	"** We shouldnt let them pass at all! **"
 	{
-		"chi"		"** **"
+		"chi"		"**我们绝对不能让僵尸通过这里**"
 	}
 	"** RESIST ONE LAST BIT! Were close to our destination! **"
 	{
-		"chi"		"** **"
+		"chi"		"**守住最后一会！我们离我们的目的地很近了**"
 	}
 	"** Well open the door in a bit! HOLD! **"
 	{
-		"chi"		"** **"
+		"chi"		"**我们将在一会后把门打开！守住！**"
 	}
 	"** Lets hope that the cargo lift is still functional - it was scarcely used. **"
 	{
-		"chi"		"** **"
+		"chi"		"**希望这个货物电梯任然可以使用-它几乎没被使用过**"
 	}
 	"** Weve been exposed for too long to the chemicals in the air... **"
 	{
-		"chi"		"** **"
+		"chi"		"**我们在充满化学制品的空气中暴露了太久了**"
 	}
 	"** Hold the area! We cant let anything through! **"
 	{
-		"chi"		"** **"
+		"chi"		"**守住这个区域！我们不能让任何东西过来**"
 	}
 	"** Keep it up! Theres a bit still to go! **"
 	{
-		"chi"		"** **"
+		"chi"		"**继续守住！任然需要一些时间**"
 	}
 	"** The outer doors are opening! Get close! It shouldnt take much longer! **"
 	{
-		"chi"		"** **"
+		"chi"		"**外门正在打开！很快了！应该不会再需要太多的时间了**"
 	}
 	"** RESIST! We cant let them enter the trench! Itd be a massacre! **"
 	{
-		"chi"		"** **"
+		"chi"		"**守住！我们不能让僵尸进来！否则我们都会被感染！**"
 	}
 	"** The inner doors are sealing now! Dont let anything through! **"
 	{
-		"chi"		"** **"
+		"chi"		"**里门真在关闭！不要让任何人进来！**"
 	}
 }
