@@ -50,19 +50,19 @@
 	}
 	"***The buttons for the three doors have been pressed***"
 	{
-		"chi"		"** **"
+		"chi"		"**门的三个按钮被按下了**"
 	}
 	"***A player pick up shield(03)***"
 	{
-		"chi"		"** **"
+		"chi"		"**一名玩家捡起了盾神器（只能用三次）**"
 	}
 	"***Zombie ladder will open***"
 	{
-		"chi"		"** **"
+		"chi"		"**僵尸侧路梯子将要打开了**"
 	}
 	"***Far away from dynamite***"
 	{
-		"chi"		"** **"
+		"chi"		"**远离炸药**"
 	}
 	"***29s***"
 	{
@@ -70,35 +70,35 @@
 	}
 	"***Its another strange place***"
 	{
-		"chi"		"** **"
+		"chi"		"**这是...另一个奇怪的地方**"
 	}
 	"***A player pickup wall***"
 	{
-		"chi"		"** **"
+		"chi"		"**一名玩家捡起了墙神器**"
 	}
 	"***This coffin board is somewhat different.***"
 	{
-		"chi"		"** **"
+		"chi"		"**这个棺材板有些不同**"
 	}
 	"***Find out where the door is***"
 	{
-		"chi"		"** **"
+		"chi"		"**去找到门在哪**"
 	}
 	"***Where is the door?***"
 	{
-		"chi"		"** **"
+		"chi"		"**门在哪？**"
 	}
 	"***There are many coffins here***"
 	{
-		"chi"		"** **"
+		"chi"		"**这儿有好多棺材**"
 	}
 	"***Be careful***"
 	{
-		"chi"		"** **"
+		"chi"		"**小心点**"
 	}
 	"***Another strange place***"
 	{
-		"chi"		"** **"
+		"chi"		"**又是一个奇怪的地方....**"
 	}
 	"***30s***"
 	{
@@ -138,7 +138,7 @@
 	}
 	"***Wait....***"
 	{
-		"chi"		"** **"
+		"chi"		"**等下....**"
 	}
 	"***Its a beautiful day. Birds are singing***"
 	{
@@ -154,19 +154,19 @@
 	}
 	"***Find the hollow stone and break it***"
 	{
-		"chi"		"** **"
+		"chi"		"**找到空心的石头并且摧毁它**"
 	}
 	"***Need explosives again?***"
 	{
-		"chi"		"** **"
+		"chi"		"**需要再炸一次？**"
 	}
 	"***Explosives in team2***"
 	{
-		"chi"		"** **"
+		"chi"		"**炸药在二号小队那边**"
 	}
 	"***Cover them out***"
 	{
-		"chi"		"** **"
+		"chi"		"**掩护他们**"
 	}
 	"***Continue to doing Boss***"
 	{
