@@ -50,7 +50,7 @@
 	}
 	"***Deactivate the alarm on the 3rd floor.***"
 	{
-		"chi"		"**去3楼关闭警报**"
+		"chi"		"**去三楼关闭警报**"
 	}
 	"***Zombie teleport soon at 2nd floor.***"
 	{
