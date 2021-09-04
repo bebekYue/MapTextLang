@@ -2,7 +2,7 @@
 {
 	"[Object] Press button to make your way."
 	{
-		"chi"		"** **"
+		"chi"		"**不断地按下按钮来一路推进**"
 	}
 	"[Map] ze_Suchirifu"
 	{
@@ -30,11 +30,11 @@
 	}
 	"[Message] These rooms have Upper side and Lower side."
 	{
-		"chi"		"** **"
+		"chi"		"**这些房间有上层和下层**"
 	}
 	"[Message] Some people must go Lower."
 	{
-		"chi"		"** **"
+		"chi"		"**一些玩家必须去下层**"
 	}
 	"[Lower Door] 10 seconds [Open]"
 	{
@@ -46,11 +46,11 @@
 	}
 	"[Message] Press Button at Lower side."
 	{
-		"chi"		"** **"
+		"chi"		"**去下层按下按钮**"
 	}
 	"[Message] Hold Upper Side"
 	{
-		"chi"		"** **"
+		"chi"		"**守住上层**"
 	}
 	"[Upper Door] 10 seconds [Open]"
 	{
@@ -58,19 +58,19 @@
 	}
 	"[Object] Press 5 Buttons."
 	{
-		"chi"		"** **"
+		"chi"		"**按下五个按钮**"
 	}
 	"[Message] Find Button at Upper Side"
 	{
-		"chi"		"** **"
+		"chi"		"**去上层寻找按钮**"
 	}
 	"[Object] The gates will close When you press button."
 	{
-		"chi"		"** **"
+		"chi"		"**当你按下按钮时大门将会关闭**"
 	}
 	"[Object] Those gates open by pressing another button."
 	{
-		"chi"		"** **"
+		"chi"		"**按下另一个按钮来打开那些大门**"
 	}
 	"[Door] 18 seconds [Open]"
 	{
