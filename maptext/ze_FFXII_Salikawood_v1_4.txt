@@ -4,7 +4,11 @@
 	{
 		"chi"		"纳斯提：感谢购买，库波！你不会后悔的。以莫古力的荣誉起誓！"
 	}
-	"You already have the Salikawood Map , kupo ~"
+	"Nutsy : A fine purchase , kupo ! You won't regret it . Moogle's honor !"
+	{
+		"chi"		"纳斯提：感谢购买，库波！你不会后悔的。以莫古力的荣誉起誓！"
+	}
+	"You already have the Salikawood Map"
 	{
 		"chi"		"纳斯提：你已经拥有了萨利卡树林的地图，库波 ~"
 	}
@@ -48,7 +52,11 @@
 	"> Congratulations - You won [ Trial ] ! <"
 	{
 		"chi"		"恭喜-你获得了审判关卡的胜利！"
-	}	
+	}
+	"> Congratulations - You won Trial ! <"
+	{
+		"chi"		"恭喜-你获得了审判关卡的胜利！"
+	}
 	"> The ship will leave in 20 seconds <"
 	{
 		"chi"		"船将在20秒后离开"
@@ -61,11 +69,23 @@
 	{
 		"chi"		"这是你最后一次呼吸！你的生命到此结束！"
 	}
+	"Take your last breath ! Your life ends here !"
+	{
+		"chi"		"这是你最后一次呼吸！你的生命到此结束！"
+	}
 	"[ You have no hope ! I will claim you ! ] "
 	{
 		"chi"		"你没有任何的希望！我将会宣布你的死亡！"
 	}
+	"You have no hope ! I will claim you ! "
+	{
+		"chi"		"你没有任何的希望！我将会宣布你的死亡！"
+	}
 	"[ Eternal Pain , Destruction ! You will be judged by my sword ! ]"
+	{
+		"chi"		"享受永恒的痛苦和毁灭吧！你将会被我的剑审判！"
+	}
+	"Eternal Pain , Destruction ! You will be judged by my sword !"
 	{
 		"chi"		"享受永恒的痛苦和毁灭吧！你将会被我的剑审判！"
 	}
@@ -78,11 +98,23 @@
 	{
 		"chi"		"这不是我该死亡的时候..."
 	}
+	"This is no my time to die ..."
+	{
+		"chi"		"这不是我该死亡的时候..."
+	}
 	"[ Savor your victory ! I shall not forget , this humiliation ! ]"
 	{
 		"chi"		"品尝你的胜利！我永远也不会忘记你给予的这种屈辱！"
 	}
+	"Savor your victory ! I shall not forget , this humiliation !"
+	{
+		"chi"		"品尝你的胜利！我永远也不会忘记你给予的这种屈辱！"
+	}
 	"[ There is nothing left to say ... How could i lose to the likes of you ? ]"
+	{
+		"chi"		"这没什么好说的...我为什么会输给你这样的人？"
+	}
+	"There is nothing left to say ... How could i lose to the likes of you ?"
 	{
 		"chi"		"这没什么好说的...我为什么会输给你这样的人？"
 	}
@@ -176,6 +208,10 @@
 	{
 		"chi"		"恭喜-你获得了正常II关卡的胜利！"
 	}
+	"> Congratulations - You won NORMAL II <"
+	{
+		"chi"		"恭喜-你获得了正常II关卡的胜利！"
+	}
 	"> KingBomb the hunt begins in 10 seconds <"
 	{
 		"chi"		"狩猎爆弹王的战斗将在10秒后开始"
@@ -184,7 +220,15 @@
 	{
 		"chi"		"恭喜-你获得了正常I关卡的胜利！"
 	}
+	"> Congratulations - You won NORMAL I <"
+	{
+		"chi"		"恭喜-你获得了正常I关卡的胜利！"
+	}
 	"> Congratulations - You won [ ULTRA I ] <"
+	{
+		"chi"		"恭喜-你获得了极限I关卡的胜利！"
+	}
+	"> Congratulations - You won ULTRA I <"
 	{
 		"chi"		"恭喜-你获得了极限I关卡的胜利！"
 	}
@@ -208,7 +252,15 @@
 	{
 		"chi"		"Admin为下一回合选择了极限I模式"
 	}
+	"Admin Selected Ultra I Mode for next round"
+	{
+		"chi"		"Admin为下一回合选择了极限I模式"
+	}
 	"Admin Selected [ Ultra II ] Mode for next round"
+	{
+		"chi"		"Admin为下一回合选择了极限II模式"
+	}
+	"Admin Selected Ultra II Mode for next round"
 	{
 		"chi"		"Admin为下一回合选择了极限II模式"
 	}
@@ -216,7 +268,15 @@
 	{
 		"chi"		"Admin为下一回合选择了正常II模式"
 	}
+	"Admin Selected Normal II Mode for next round"
+	{
+		"chi"		"Admin为下一回合选择了正常II模式"
+	}
 	"Admin Selected [ Trial ] Mode for next round"
+	{
+		"chi"		"Admin为下一回合选择了审判模式"
+	}
+	"Admin Selected Trial Mode for next round"
 	{
 		"chi"		"Admin为下一回合选择了审判模式"
 	}
@@ -232,7 +292,15 @@
 	{
 		"chi"		"一名玩家获得了召唤爆弹王"
 	}
+	"> A player obtained KingBomb <"
+	{
+		"chi"		"一名玩家获得了召唤爆弹王"
+	}
 	"> A player obtained the Esper [ Chaos - Walker of the Wheel ] <"
+	{
+		"chi"		"一名玩家获得了召唤魔法:轮回王-卡奥斯"
+	}
+	"> A player obtained the Esper Chaos - Walker of the Wheel <"
 	{
 		"chi"		"一名玩家获得了召唤魔法:轮回王-卡奥斯"
 	}
@@ -247,6 +315,10 @@
 		"DoorCountDown"		"5"
 	}
 	"> A player obtained the Esper [ Zodiark - Keeper of Precepts ] <"
+	{
+		"chi"		"一名玩家获得了召唤魔法:戒律王-佐迪亚克"
+	}
+	"> A player obtained the Esper Zodiark - Keeper of Precepts <"
 	{
 		"chi"		"一名玩家获得了召唤魔法:戒律王-佐迪亚克"
 	}
@@ -278,18 +350,24 @@
 	{
 		"chi"		"Admin为下一回合选择了正常I模式"
 	}
+	"Admin Selected Normal I Mode for next round"
+	{
+		"chi"		"Admin为下一回合选择了正常I模式"
+	}
 	"> KingBomb has cast Fire Storm <"
 	{
 		"chi"		"爆弹王正在释放火焰风暴"
-		"DoorCountDown"		"5"
+		"DoorCountDown"		"10"
 	}
 	"> Zalera has cast Condemnation <"
 	{
 		"chi"		"死之天使-扎鲁埃拉正在释放天谴"
+		"DoorCountDown"		"15"
 	}
 	"> Chaos has cast Chaotic Tornado <"
 	{
-		"chi"		"轮回王-卡奥斯正在释放混沌风暴"
+		"chi"		"轮回王-卡奥斯正在释放混沌龙卷风"
+		"DoorCountDown"		"10"
 	}
 	"> A player obtained Oil Mote <"
 	{
@@ -297,9 +375,13 @@
 	}
 	"[ Horne ] : Moogling is opened , kupo ~"
 	{
-		"chi"		"霍恩:莫古力商店开业中,库波 ~"
+		"chi"		"霍恩:莫古力传送商店开业中,库波 ~"
 	}
 	"> A player obtained the Esper [ Zalera - the Death Seraph ] <"
+	{
+		"chi"		"一名玩家获得了召唤魔法:死之天使-扎鲁埃拉"
+	}
+	"> A player obtained the Esper Zalera - the Death Seraph <"
 	{
 		"chi"		"一名玩家获得了召唤魔法:死之天使-扎鲁埃拉"
 	}
@@ -426,9 +508,17 @@
 	{
 		"chi"		"莫古力:你怎么了？"
 	}
+	"Moogle : What's your matter ?"
+	{
+		"chi"		"莫古力:你怎么了？"
+	}
 	"[ Horne ] : Moogling is closed , kupo ~"
 	{
-		"chi"		"霍恩:莫古力商店关门了,库波 ~"
+		"chi"		"霍恩:莫古力传送商店关门了,库波 ~"
+	}
+	"Horne : Moogling is closed , kupo ~"
+	{
+		"chi"		"霍恩:莫古力传送商店关门了,库波 ~"
 	}
 	"> ZE FFXII SALIKAWOOD <"
 	{
@@ -438,5 +528,13 @@
 	"[ Craftsmoogle ] : I'm working , let me alone"
 	{
 		"chi"		"工匠莫古力:我在工作，让我一个人待着"
+	}
+	"Craftsmoogle : I'm working , let me alone"
+	{
+		"chi"		"工匠莫古力:我在工作，让我一个人待着"
+	}
+	"> The doors will open in 10 seconds <"
+	{
+		"chi"		"大门将在10秒后打开"
 	}
 }
