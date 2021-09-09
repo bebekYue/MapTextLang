@@ -151,7 +151,6 @@ function Say_ScriptDate()
     Bxzl_Item_Zgravity2_Gametext = Entities.FindByName(null,"Bxzl_Item_Zgravity2_Gametext");
     EntFire("cmd","Command","say script by bxzl on 2021.07.04",0.00,null);
     EntFire("cmd","Command","改动一 增加神器拾取时候提示",1.00,null);
-    EntFire("cmd","Command","改动二 增加第三关BOSS技能详细提示",2.00,null);
 }
 
 function Set_ItemText()
