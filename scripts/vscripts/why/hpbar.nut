@@ -4,7 +4,7 @@ hpEnable<-false;
 subMode<-true;
 textEnt<-null;
 tickTime<-1.0;
-textChannel<-5;
+textChannel<-3;
 function SetMaxHp(max,sub=true){
 	currentHp=max;
 	maxHp=max;
