@@ -29,8 +29,8 @@ function hpTick(){
 			textEnt.__KeyValueFromString("message", "血量："+currentHp+"/"+maxHp);
 			textEnt.__KeyValueFromInt("channel", textChannel);
 			textEnt.__KeyValueFromFloat("holdtime", 1.0);
-			textEnt.__KeyValueFromFloat("x", 0.4);
-			textEnt.__KeyValueFromFloat("y", 0.02);
+			textEnt.__KeyValueFromFloat("x", 0.02);
+			textEnt.__KeyValueFromFloat("y", 0.4);
 			textEnt.__KeyValueFromString("color", "255 255 255");
 		}
 		textEnt.__KeyValueFromString("message", "血量："+currentHp+"/"+maxHp);
