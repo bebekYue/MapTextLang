@@ -25,6 +25,7 @@ function hpTick(){
 	if(hpEnable){
 		if(textEnt==null){
 			textEnt=Entities.CreateByClassname("game_text");
+			textEnt.__KeyValueFromString("targetname", "why_hpbar");
 			textEnt.__KeyValueFromInt("spawnflags", 1);
 			textEnt.__KeyValueFromString("message", "血量："+currentHp+"/"+maxHp);
 			textEnt.__KeyValueFromInt("channel", textChannel);
