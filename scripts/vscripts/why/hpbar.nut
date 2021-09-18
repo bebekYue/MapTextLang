@@ -4,7 +4,7 @@ hpEnable<-false;
 subMode<-true;
 textEnt<-null;
 tickTime<-1.0;
-textChannel<-3;
+textChannel<-4;
 function SetMaxHp(max,sub=true){
 	currentHp=max;
 	maxHp=max;
@@ -25,7 +25,6 @@ function hpTick(){
 	if(hpEnable){
 		if(textEnt==null){
 			textEnt=Entities.CreateByClassname("game_text");
-			textEnt.__KeyValueFromString("targetname", "why_hpbar");
 			textEnt.__KeyValueFromInt("spawnflags", 1);
 			textEnt.__KeyValueFromString("message", "血量："+currentHp+"/"+maxHp);
 			textEnt.__KeyValueFromInt("channel", textChannel);
