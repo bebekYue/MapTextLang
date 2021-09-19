@@ -52,7 +52,7 @@ function SetBuff(list,times){
     for(local t=0;t<times;t++){
         local idx=RandomInt(0, buff_list.len()-1);
         for(local j=1;j<buff_list[idx].len();j++){
-            SendToConsole(buff_list[idx][j]);
+            SendToConsoleServer(buff_list[idx][j]);
         }
         message=message+"\n"+buff_list[idx][0];
         buff_list.remove(idx);
