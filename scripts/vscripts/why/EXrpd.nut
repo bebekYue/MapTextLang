@@ -64,7 +64,7 @@ function Init(){
     message="";
     SetBuff(zm_buff,zm_buff_num);
     SetBuff(hm_buff,hm_buff_num);
-    textEnt.__KeyValueFromString("message",message);
+    EntFireByHandle(self, runscriptcode, "SetText()", 10.0, null, null);
 }
 
 function SetBuff(list,times){
@@ -79,6 +79,10 @@ function SetBuff(list,times){
         buff_list.remove(idx);
     }
     
+}
+
+function SetText(){
+    textEnt.__KeyValueFromString("message",message);
 }
 
 think_delay<-10;
