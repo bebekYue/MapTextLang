@@ -2,25 +2,28 @@ exmode<-false;
 textEnt<-null;
 message<-null;
 zm_buff<-[
-    ["僵尸BUFF：毒降价6500→4500","sm_xsys_config change xsys.items.poison.price 4500"],
-    ["僵尸BUFF：毒范围半径192→225","sm_xsys_config change xsys.zmpoison.radius 225"],
-    ["僵尸BUFF：毒时间5→10","sm_xsys_config change xsys.zmpoison.duration 10"],
-    ["僵尸BUFF：尸变比6：1→4：1","sm_rcon zr_infect_mzombie_ratio 5"],
-    ["僵尸BUFF：毒伤害10→15","sm_xsys_config change xsys.zmpoison.damage 15"],
-    ["僵尸BUFF：毒次数3→10","sm_xsys_config change xsys.items.poison.limit 10"],
+    ["僵尸BUFF：毒降价6500→4500","sm_rcon sm_xsys_config change xsys.items.poison.price 4500"],
+    ["僵尸BUFF：毒范围半径192→225","sm_rcon sm_xsys_config change xsys.zmpoison.radius 225"],
+    ["僵尸BUFF：毒时间5→10","sm_rcon sm_xsys_config change xsys.zmpoison.duration 10"],
+    ["僵尸BUFF：尸变比6：1→4：1","sm_cvar zr_infect_mzombie_ratio 5"],
+    ["僵尸BUFF：毒伤害10→15","sm_rcon sm_xsys_config change xsys.zmpoison.damage 15"],
+    ["僵尸BUFF：毒次数3→10","sm_rcon sm_xsys_config change xsys.items.poison.limit 10"],
     ["僵尸BUFF：加速cd25→20","sm_cvar zr_speed_delay 20"],
-    ["僵尸BUFF：母体毒1→3","sm_xsys_config change xsys.zmpoison.mzmpoison 3"]
+    ["僵尸BUFF：母体毒1→3","sm_rcon sm_xsys_config change xsys.zmpoison.mzmpoison 3"]
 ];
 hm_buff<-[
-    ["人类BUFF：加血雷+2","sm_rcon sm_flash_limit 3"],
-    ["人类BUFF：手雷+1，血量+50","sm_cvar sm_he_limit 4","sm_sethealth @ct 188"],
-    ["人类BUFF：加血雷+1，价格下调至4500","sm_rcon sm_flash_limit 2","sm_xsys_config change xsys.items.flash.price 4500"],
-    ["人类BUFF：加血雷价格下调至2500","sm_xsys_config change xsys.items.flash.price 2500"]
+    ["人类BUFF：加血雷+2","sm_cvar sm_flash_limit 3"],
+    ["人类BUFF：手雷+1，血量+50","sm_cvar sm_he_limit 4","sm_rcon sm_sethealth @ct 188"],
+    ["人类BUFF：加血雷+1，价格下调至4500","sm_cvar sm_flash_limit 2","sm_rcon sm_xsys_config change xsys.items.flash.price 4500"],
+    ["人类BUFF：加血雷价格下调至2500","sm_rcon sm_xsys_config change xsys.items.flash.price 2500"]
 ];
 zm_buff_num<-3;
 hm_buff_num<-1;
 reset_buff<-[
-    "sm_xsys_config change xsys.items.poison.price 4500","sm_xsys_config change xsys.zmpoison.radius 192","sm_xsys_config change xsys.zmpoison.duration 5","sm_rcon zr_infect_mzombie_ratio 7","sm_xsys_config change xsys.zmpoison.damage 10","sm_xsys_config change xsys.items.poison.limit 3","sm_cvar zr_speed_delay 25","sm_xsys_config change xsys.zmpoison.mzmpoison 1","sm_rcon sm_flash_limit 1","sm_cvar sm_he_limit 3","sm_xsys_config change xsys.items.flash.price 6500"
+    "sm_rcon sm_xsys_config change xsys.items.poison.price 4500","sm_rcon sm_xsys_config change xsys.zmpoison.radius 192",
+    "sm_rcon sm_xsys_config change xsys.zmpoison.duration 5","sm_cvar zr_infect_mzombie_ratio 7","sm_rcon sm_xsys_config change xsys.zmpoison.damage 10",
+    "sm_rcon sm_xsys_config change xsys.items.poison.limit 3","sm_cvar zr_speed_delay 25","sm_rcon sm_xsys_config change xsys.zmpoison.mzmpoison 1",
+    "sm_cvar sm_flash_limit 1","sm_cvar sm_he_limit 3","sm_rcon sm_xsys_config change xsys.items.flash.price 6500"
 ]
 
 function Init(){
