@@ -1,6 +1,7 @@
+// sm_entfire exmode runscriptcode "ToggleEx()"
 exmode<-false;
-textEnt<-null;
-message<-null;
+zm_buff_num<-3;
+hm_buff_num<-1;
 zm_buff<-[
     ["僵尸BUFF：毒降价6500→4500","sm_rcon sm_xsys_config change xsys.items.poison.price 4500"],
     ["僵尸BUFF：毒范围半径192→225","sm_rcon sm_xsys_config change xsys.zmpoison.radius 225"],
@@ -17,8 +18,6 @@ hm_buff<-[
     ["人类BUFF：加血雷+1，价格下调至4500","sm_cvar sm_flash_limit 2","sm_rcon sm_xsys_config change xsys.items.flash.price 4500"],
     ["人类BUFF：加血雷价格下调至2500","sm_rcon sm_xsys_config change xsys.items.flash.price 2500"]
 ];
-zm_buff_num<-3;
-hm_buff_num<-1;
 reset_buff<-[
     "sm_rcon sm_xsys_config change xsys.items.poison.price 4500","sm_rcon sm_xsys_config change xsys.zmpoison.radius 192",
     "sm_rcon sm_xsys_config change xsys.zmpoison.duration 5","sm_cvar zr_infect_mzombie_ratio 7","sm_rcon sm_xsys_config change xsys.zmpoison.damage 10",
@@ -26,11 +25,33 @@ reset_buff<-[
     "sm_cvar sm_flash_limit 1","sm_cvar sm_he_limit 3","sm_rcon sm_xsys_config change xsys.items.flash.price 6500"
 ]
 
+textEnt<-null;
+message<-null;
+
+function ToggleEx(){
+    exmode=!exmode;
+    if(exmode){
+        SendToConsoleServer("sm_rcon sm_xsys_config change xsys.storecat.powerups.disabled false");
+        SendToConsoleServer("sm_rcon sm_xsys_config change xsys.storecat.zombies.disabled false");
+        Init();
+        ScriptPrintMessageChatAll(" \x03exmode 已启动\x01");
+    }else{
+        SendToConsoleServer("sm_rcon sm_xsys_config change xsys.storecat.powerups.disabled true");
+        SendToConsoleServer("sm_rcon sm_xsys_config change xsys.storecat.zombies.disabled true");
+        foreach(k in reset_buff){
+            SendToConsoleServer(k);
+        }
+        ScriptPrintMessageChatAll(" \x03exmode 已关闭\x01");
+    }
+}
+
 function Init(){
+    if(!exmode){
+        return;
+    }
     foreach(k in reset_buff){
         SendToConsoleServer(k);
     }
-    if(!exmode)return;
     textEnt=Entities.CreateByClassname("game_text");
     textEnt.__KeyValueFromInt("spawnflags", 1);
     textEnt.__KeyValueFromString("message", "警察局EX难度\n插件技能将会开放购买，僵尸将会获得随机3个buff\n技能cd减短、商店降价、僵尸毒增强等\n人类随机获得一个buff：\n物品降价、初始血量增加、雷数量增加等");
@@ -57,7 +78,7 @@ function SetBuff(list,times){
         message=message+"\n"+buff_list[idx][0];
         buff_list.remove(idx);
     }
-
+    
 }
 
 think_delay<-10;
