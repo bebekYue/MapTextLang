@@ -34,14 +34,14 @@ function ToggleEx(){
         SendToConsoleServer("sm_rcon sm_xsys_config change xsys.storecat.powerups.disabled false");
         SendToConsoleServer("sm_rcon sm_xsys_config change xsys.storecat.zombies.disabled false");
         Init();
-        ScriptPrintMessageChatAll(" \x03exmode 已启动\x01");
+        ScriptPrintMessageChatAll(" \x03 exmode 已启动\x01");
     }else{
         SendToConsoleServer("sm_rcon sm_xsys_config change xsys.storecat.powerups.disabled true");
         SendToConsoleServer("sm_rcon sm_xsys_config change xsys.storecat.zombies.disabled true");
         foreach(k in reset_buff){
             SendToConsoleServer(k);
         }
-        ScriptPrintMessageChatAll(" \x03exmode 已关闭\x01");
+        ScriptPrintMessageChatAll(" \x03 exmode 已关闭\x01");
     }
 }
 
@@ -83,6 +83,9 @@ function SetBuff(list,times){
 
 think_delay<-10;
 function Think(){
+    if(!exmode){
+        return;
+    }
     if(think_delay!=0){
         think_delay--;
         return;
