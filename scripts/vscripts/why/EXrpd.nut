@@ -64,7 +64,7 @@ function Init(){
     message="";
     SetBuff(zm_buff,zm_buff_num);
     SetBuff(hm_buff,hm_buff_num);
-    EntFireByHandle(self, runscriptcode, "SetText()", 10.0, null, null);
+    EntFireByHandle(self, "runscriptcode", "SetText()", 10.0, null, null);
 }
 
 function SetBuff(list,times){
