@@ -7,7 +7,7 @@ zm_buff<-[
     ["僵尸BUFF：毒范围半径192→225","sm_rcon sm_xsys_config change xsys.zmpoison.radius 225"],
     ["僵尸BUFF：毒时间5→10","sm_rcon sm_xsys_config change xsys.zmpoison.duration 10"],
     ["僵尸BUFF：尸变比6：1→3：1","sm_cvar zr_infect_mzombie_ratio 4"],
-    ["僵尸BUFF：毒伤害12→15","sm_rcon sm_xsys_config change xsys.zmpoison.damage 16"],
+    ["僵尸BUFF：毒伤害12→15","sm_rcon sm_xsys_config change xsys.zmpoison.damage 15"],
     ["僵尸BUFF：毒次数3→10","sm_rcon sm_xsys_config change xsys.items.poison.limit 10"],
     ["僵尸BUFF：加速cd25→20","sm_cvar zr_speed_delay 20"],
     ["僵尸BUFF：母体毒1→3","sm_rcon sm_xsys_config change xsys.zmpoison.mzmpoison 3"]
@@ -57,8 +57,8 @@ function Init(){
     textEnt.__KeyValueFromString("message", "警察局EX难度\n插件技能将会开放购买，僵尸将会获得随机3个buff\n技能cd减短、商店降价、僵尸毒增强等\n人类随机获得一个buff：\n物品降价、初始血量增加、雷数量增加等");
     textEnt.__KeyValueFromInt("channel", 1);
     textEnt.__KeyValueFromFloat("holdtime", 1.0);
-    textEnt.__KeyValueFromFloat("x", 0.02);
-    textEnt.__KeyValueFromFloat("y", 0.9);
+    textEnt.__KeyValueFromFloat("x", 0.9);
+    textEnt.__KeyValueFromFloat("y", 0.4);
     textEnt.__KeyValueFromString("color", "255 255 255");
     EntFireByHandle(textEnt, "Display", "", 0.0, null, null);
     message="";
